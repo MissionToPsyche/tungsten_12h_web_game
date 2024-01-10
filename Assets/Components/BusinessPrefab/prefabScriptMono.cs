@@ -13,12 +13,12 @@ public class prefabScriptMono : MonoBehaviour
     //public GameObject myBusinessPrefabObject;  //no need to make object since its attached to prefab      
 
     public float secondsToFinish = 10f;     //variable dependent on business
-    public double profit = 1.00;
+    public float profit = 1.00f;
 
 
-    public double upgradeCost;
+    public float upgradeCost;
     public int scale; //??
-    public double unlockCost;
+    public float unlockCost;
     public int level = 0;
 
 
@@ -28,22 +28,27 @@ public class prefabScriptMono : MonoBehaviour
 
     Slider loadingBar;
 
-    TextMeshProUGUI levelText;  
+    TextMeshProUGUI levelText;
+
+    totalMoneyScript totalMoneyObjectScript;
 
     // Start is called before the first frame update
     void Start()
     {
-        activateButton = transform.Find("Canvas/activateButton").GetComponent<Button>();      //create ACTIVATE BUTTON OBJECT
-        upgradeButton = transform.Find("Canvas/upgradeButton").GetComponent<Button>();        //create UPGRADE BUTTON OBJECT
+        //these components within its own hierarchy
+        activateButton = transform.Find("Canvas/activateButton").GetComponent<Button>();      //reference ACTIVATE BUTTON OBJECT
+        upgradeButton = transform.Find("Canvas/upgradeButton").GetComponent<Button>();        //reference UPGRADE BUTTON OBJECT
+        loadingBar = transform.Find("Canvas/loadingBar").GetComponent<Slider>();              //reference LOADING BAR OBJECT
+        levelText = transform.Find("Canvas/level").GetComponent<TextMeshProUGUI>();           //reference LEVEL TEXT OBJECT
 
-        loadingBar = transform.Find("Canvas/loadingBar").GetComponent<Slider>();              //create LOADING BAR OBJECT
+        //objects outside of hierarchy
+        totalMoneyObjectScript = GameObject.Find("totalMoney").GetComponent<totalMoneyScript>();    //note this gets only the gameobject
 
-        levelText = transform.Find("Canvas/level").GetComponent<TextMeshProUGUI>();                       //create LEVEL TEXT OBJECT  
+
 
 
         activateButton.onClick.AddListener(activateButtonHandler);     //activateButton listener (can initiate in global)
         upgradeButton.onClick.AddListener(upgradeButtonHandler);     //activateButton listener (can initiate in global)
-
     }
 
     //"upgradeButton" Handler
@@ -51,25 +56,17 @@ public class prefabScriptMono : MonoBehaviour
     {
         //button needs to be clickable only when enough money is had
         level++;
-        if (levelText != null)
-        {
-            levelText.text = level.ToString();
-        }
-        else
-        {
-            Debug.LogError("Text component is null. Make sure it is assigned in the Unity Editor.");
-        }
+        levelText.text = level.ToString();
     }
-
-
 
     //"activateButton" Handler
     void activateButtonHandler()
     {
         activateButton.interactable = false;              //button will UNCLICKABLE since its has started loading bar
-
         StartCoroutine(MyCoroutine());              //start coroutine
     }
+
+
     IEnumerator MyCoroutine()
     {
         float elapsedTime = 0f;
@@ -91,6 +88,10 @@ public class prefabScriptMono : MonoBehaviour
 
         loadingBar.value = 0f;                  //reset the loading bar
         activateButton.interactable = true;     //make button clickable again
+
+        //need to update total money object
+        totalMoneyObjectScript.totalMoney += profit;
+
         yield break;                            // End the coroutine
     }
 
