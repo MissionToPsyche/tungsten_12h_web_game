@@ -12,14 +12,16 @@ public class prefabScriptMono : MonoBehaviour
 {
     //public GameObject myBusinessPrefabObject;  //no need to make object since its attached to prefab      
 
-    public float secondsToFinish = 10f;     //variable dependent on business
-    public float profit = 1.00f;
+    public float secondsToFinish = 1.00f;     //variable dependent on business
+    public float baseProfit = 1.00f;
 
 
-    public float upgradeCost;
-    public int scale; //??
-    public float unlockCost;
-    public int level = 0;
+    public float upgradeCost = 1.00f; //cost to upgrade (should be modifed after every level)
+    public float upgradeCostScale = 1.20f; //(increase 1/5 each level) //how much the cost of upgrade should increase per level
+    public float profitIncreasePerLevel = 1.00f;           //each level will increase profit of business by this amount (linear)
+                                                                                                                                                                                                                                                                                                                                    
+    public float unlockCost = 0;                    //still have to click at 0 to unlock                    
+    public int level = 1;                           //base level is one
 
 
     //COMPONENTS
@@ -44,9 +46,6 @@ public class prefabScriptMono : MonoBehaviour
         //objects outside of hierarchy
         totalMoneyObjectScript = GameObject.Find("totalMoney").GetComponent<totalMoneyScript>();    //note this gets only the gameobject
 
-
-
-
         activateButton.onClick.AddListener(activateButtonHandler);     //activateButton listener (can initiate in global)
         upgradeButton.onClick.AddListener(upgradeButtonHandler);     //activateButton listener (can initiate in global)
     }
@@ -56,7 +55,13 @@ public class prefabScriptMono : MonoBehaviour
     {
         //button needs to be clickable only when enough money is had
         level++;
-        levelText.text = level.ToString();
+        levelText.text = level.ToString();          //update level text
+        baseProfit += profitIncreasePerLevel;       //increase profit of business 
+
+        totalMoneyObjectScript.totalMoney -= upgradeCost;  //subtract cost to upgrade from total money //SUBTRACT MONEY BEFORE YOU MODIFY UPGRADE COST BELOW     
+
+        upgradeCost *= upgradeCostScale;            //increase cost to upgrade
+
     }
 
     //"activateButton" Handler
@@ -90,7 +95,7 @@ public class prefabScriptMono : MonoBehaviour
         activateButton.interactable = true;     //make button clickable again
 
         //need to update total money object
-        totalMoneyObjectScript.totalMoney += profit;
+        totalMoneyObjectScript.totalMoney += baseProfit;
 
         yield break;                            // End the coroutine
     }
@@ -98,6 +103,13 @@ public class prefabScriptMono : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        //if upgrade cost is less than total money make upgrade button interactable
+        if (upgradeCost <= totalMoneyObjectScript.totalMoney)
+        {
+            upgradeButton.interactable = true;
+        } else
+        {
+            upgradeButton.interactable = false;
+        }
     }
 }
