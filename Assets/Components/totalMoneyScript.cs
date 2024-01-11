@@ -26,7 +26,7 @@ public class totalMoneyScript : MonoBehaviour
     void Update()
     {
         //every frame its text will be whatever value the totalMoney double is
-        totalMoneyText.text = totalMoney.ToString();
+        totalMoneyText.text = totalMoney.ToString() + "$";
 
     }
 }

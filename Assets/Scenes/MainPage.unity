@@ -282,7 +282,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 0.00
+  m_text: '0.00$
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -565,7 +567,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   totalMoney: 0
---- !u!1001 &1384972806
+--- !u!1001 &1774269469
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -617,6 +619,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5622840529765545675, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: level
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5622840529765545675, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: upgradeCost
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6227285583134176676, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: m_Name
       value: businessPrefabGameObject
@@ -632,5 +642,5 @@ SceneRoots:
   m_Roots:
   - {fileID: 519420032}
   - {fileID: 505870194}
-  - {fileID: 1384972806}
   - {fileID: 1365763747}
+  - {fileID: 1774269469}

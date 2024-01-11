@@ -4,12 +4,19 @@ using UnityEngine;
 
 
 //ADDED
-using UnityEngine.UI;
-using TMPro;
+using UnityEngine.UI; //text, buttons, slider etc
+using TMPro;        //text (tmp) NOT LEGACY
+
+using System;   //math
+
 
 
 public class prefabScriptMono : MonoBehaviour
 {
+    public float unlockCost = 0;                    //still have to click at 0 to unlock                    
+
+
+
     //public GameObject myBusinessPrefabObject;  //no need to make object since its attached to prefab      
 
     public float secondsToFinish = 1.00f;     //variable dependent on business
@@ -17,11 +24,13 @@ public class prefabScriptMono : MonoBehaviour
 
 
     public float upgradeCost = 1.00f; //cost to upgrade (should be modifed after every level)
-    public float upgradeCostScale = 1.20f; //(increase 1/5 each level) //how much the cost of upgrade should increase per level
+    public float upgradeCostScale = 1.07f; //(increase 1/5 each level) //how much the cost of upgrade should increase per level
     public float profitIncreasePerLevel = 1.00f;           //each level will increase profit of business by this amount (linear)
                                                                                                                                                                                                                                                                                                                                     
-    public float unlockCost = 0;                    //still have to click at 0 to unlock                    
     public int level = 1;                           //base level is one
+
+
+    public float profitMultiplerUpgrade = 1.00f; //in future when we add buttons to increase cost of each business with milestone this will get changed
 
 
     //COMPONENTS
@@ -31,6 +40,8 @@ public class prefabScriptMono : MonoBehaviour
     Slider loadingBar;
 
     TextMeshProUGUI levelText;
+    TextMeshProUGUI upgradeCostText;
+
 
     totalMoneyScript totalMoneyObjectScript;
 
@@ -42,10 +53,20 @@ public class prefabScriptMono : MonoBehaviour
         upgradeButton = transform.Find("Canvas/upgradeButton").GetComponent<Button>();        //reference UPGRADE BUTTON OBJECT
         loadingBar = transform.Find("Canvas/loadingBar").GetComponent<Slider>();              //reference LOADING BAR OBJECT
         levelText = transform.Find("Canvas/level").GetComponent<TextMeshProUGUI>();           //reference LEVEL TEXT OBJECT
+        upgradeCostText = transform.Find("Canvas/upgradeButton/upgradeCostTextInButton").GetComponent<TextMeshProUGUI>();           //reference COST TO UPGRADE TEXT OBJECT
+
 
         //objects outside of hierarchy
         totalMoneyObjectScript = GameObject.Find("totalMoney").GetComponent<totalMoneyScript>();    //note this gets only the gameobject
 
+
+
+
+        //update text on based on variables
+        upgradeCostText.text = upgradeCost.ToString() + "$";
+        levelText.text = level.ToString();
+
+        //create button handlers
         activateButton.onClick.AddListener(activateButtonHandler);     //activateButton listener (can initiate in global)
         upgradeButton.onClick.AddListener(upgradeButtonHandler);     //activateButton listener (can initiate in global)
     }
@@ -53,14 +74,25 @@ public class prefabScriptMono : MonoBehaviour
     //"upgradeButton" Handler
     void upgradeButtonHandler()
     {
-        //button needs to be clickable only when enough money is had
+        //increase level and update text
         level++;
-        levelText.text = level.ToString();          //update level text
+        levelText.text = level.ToString();    
+
+
+        //increase profit of business
         baseProfit += profitIncreasePerLevel;       //increase profit of business 
 
-        totalMoneyObjectScript.totalMoney -= upgradeCost;  //subtract cost to upgrade from total money //SUBTRACT MONEY BEFORE YOU MODIFY UPGRADE COST BELOW     
 
-        upgradeCost *= upgradeCostScale;            //increase cost to upgrade
+        //update total money by subtracting upgrade cost (rounded after calculation)
+        totalMoneyObjectScript.totalMoney -= upgradeCost;   //SUBTRACT MONEY BEFORE YOU MODIFY UPGRADE COST BELOW     
+        totalMoneyObjectScript.totalMoney = (float)Math.Floor(totalMoneyObjectScript.totalMoney * 100) / 100;  //this simply rounds the value we got to 2 decimal places
+
+
+        //update upgrade cost (rounded)
+        upgradeCost *= upgradeCostScale;            //this increased the upgradeCost
+        upgradeCost = (float)Math.Floor(upgradeCost * 100) / 100;  //this simply rounds the value we got to 2 decimal places
+
+        upgradeCostText.text = upgradeCost.ToString() + "$"; //update upgrade cost text to new cost
 
     }
 
