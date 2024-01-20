@@ -585,6 +585,7 @@ MonoBehaviour:
   profitIncreasePerLevel: 1
   level: 1
   profitMultiplerUpgrade: 1
+  canvas: {fileID: 4715354385121623202}
 --- !u!1 &7249165787877352046
 GameObject:
   m_ObjectHideFlags: 0

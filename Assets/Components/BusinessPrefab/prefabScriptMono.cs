@@ -34,6 +34,10 @@ public class prefabScriptMono : MonoBehaviour
 
 
     //COMPONENTS
+
+    //canvas
+    [SerializeField] private GameObject canvas;
+
     Button upgradeButton;
     Button activateButton;
 
@@ -48,7 +52,10 @@ public class prefabScriptMono : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //these components within its own hierarchy
+        //these components WITHIN HIERARCHY
+        //canvas = transform.Find("Canvas");      //reference CANVAS OBJECT
+
+
         activateButton = transform.Find("Canvas/activateButton").GetComponent<Button>();      //reference ACTIVATE BUTTON OBJECT
         upgradeButton = transform.Find("Canvas/upgradeButton").GetComponent<Button>();        //reference UPGRADE BUTTON OBJECT
         loadingBar = transform.Find("Canvas/loadingBar").GetComponent<Slider>();              //reference LOADING BAR OBJECT
@@ -56,7 +63,7 @@ public class prefabScriptMono : MonoBehaviour
         upgradeCostText = transform.Find("Canvas/upgradeButton/upgradeCostTextInButton").GetComponent<TextMeshProUGUI>();           //reference COST TO UPGRADE TEXT OBJECT
 
 
-        //objects outside of hierarchy
+        //objects OUTSIDE HIERARCHY
         totalMoneyObjectScript = GameObject.Find("totalMoney").GetComponent<totalMoneyScript>();    //note this gets only the gameobject
 
 
@@ -69,6 +76,10 @@ public class prefabScriptMono : MonoBehaviour
         //create button handlers
         activateButton.onClick.AddListener(activateButtonHandler);     //activateButton listener (can initiate in global)
         upgradeButton.onClick.AddListener(upgradeButtonHandler);     //activateButton listener (can initiate in global)
+
+        //set loading bar inactive
+        canvas.SetActive(false);
+
     }
 
     //"upgradeButton" Handler
