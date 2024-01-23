@@ -17,7 +17,6 @@ public class prefabScriptMono : MonoBehaviour
 
 
 
-    //public GameObject myBusinessPrefabObject;  //no need to make object since its attached to prefab      
 
     public float secondsToFinish = 1.00f;     //variable dependent on business
     public float baseProfit = 1.00f;
@@ -26,7 +25,7 @@ public class prefabScriptMono : MonoBehaviour
     public float upgradeCost = 1.00f; //cost to upgrade (should be modifed after every level)
     public float upgradeCostScale = 1.07f; //(increase 1/5 each level) //how much the cost of upgrade should increase per level
     public float profitIncreasePerLevel = 1.00f;           //each level will increase profit of business by this amount (linear)
-                                                                                                                                                                                                                                                                                                                                    
+
     public int level = 1;                           //base level is one
 
 
@@ -34,37 +33,39 @@ public class prefabScriptMono : MonoBehaviour
 
 
     //COMPONENTS
+    //These objects are displayed in order to unlock the business
+    [SerializeField] GameObject unlockCanvas;
+    [SerializeField] Button unlockButton;
+    [SerializeField] TextMeshProUGUI businessNameText;
+    [SerializeField] TextMeshProUGUI unlockCostText;
 
-    //canvas
-    [SerializeField] private GameObject canvas;
-
-    Button upgradeButton;
-    Button activateButton;
-
-    Slider loadingBar;
-
-    TextMeshProUGUI levelText;
-    TextMeshProUGUI upgradeCostText;
+    //These objects are all when the business is unlocked
+    [SerializeField] GameObject unlockedCanvas;
+    [SerializeField] Slider loadingBar;
+    [SerializeField] Button activateButton;
+    [SerializeField] Button upgradeButton;
+    [SerializeField] TextMeshProUGUI upgradeCostText;
+    [SerializeField] TextMeshProUGUI levelText;
 
 
-    totalMoneyScript totalMoneyObjectScript;
+
+    totalMoneyScript totalMoneyObject; //can i add objecta outside the hierarchy??
 
     // Start is called before the first frame update
     void Start()
     {
+        //INSTEAD OF FINDING WITH CODE WE USE UNITY EDITOR TO DRAG AND DROP OBJECTS INTO THIS OBJECT
         //these components WITHIN HIERARCHY
         //canvas = transform.Find("Canvas");      //reference CANVAS OBJECT
-
-
-        activateButton = transform.Find("Canvas/activateButton").GetComponent<Button>();      //reference ACTIVATE BUTTON OBJECT
-        upgradeButton = transform.Find("Canvas/upgradeButton").GetComponent<Button>();        //reference UPGRADE BUTTON OBJECT
-        loadingBar = transform.Find("Canvas/loadingBar").GetComponent<Slider>();              //reference LOADING BAR OBJECT
-        levelText = transform.Find("Canvas/level").GetComponent<TextMeshProUGUI>();           //reference LEVEL TEXT OBJECT
-        upgradeCostText = transform.Find("Canvas/upgradeButton/upgradeCostTextInButton").GetComponent<TextMeshProUGUI>();           //reference COST TO UPGRADE TEXT OBJECT
+        //activateButton = transform.Find("Canvas/activateButton").GetComponent<Button>();      //reference ACTIVATE BUTTON OBJECT
+        //upgradeButton = transform.Find("Canvas/upgradeButton").GetComponent<Button>();        //reference UPGRADE BUTTON OBJECT
+        //loadingBar = transform.Find("Canvas/loadingBar").GetComponent<Slider>();              //reference LOADING BAR OBJECT
+        //levelText = transform.Find("Canvas/level").GetComponent<TextMeshProUGUI>();           //reference LEVEL TEXT OBJECT
+        //upgradeCostText = transform.Find("Canvas/upgradeButton/upgradeCostTextInButton").GetComponent<TextMeshProUGUI>();           //reference COST TO UPGRADE TEXT OBJECT
 
 
         //objects OUTSIDE HIERARCHY
-        totalMoneyObjectScript = GameObject.Find("totalMoney").GetComponent<totalMoneyScript>();    //note this gets only the gameobject
+        totalMoneyObject = GameObject.Find("totalMoney").GetComponent<totalMoneyScript>();    //note this gets only the gameobject
 
 
 
@@ -73,33 +74,36 @@ public class prefabScriptMono : MonoBehaviour
         upgradeCostText.text = upgradeCost.ToString() + "$";
         levelText.text = level.ToString();
 
-        //create button handlers
-        activateButton.onClick.AddListener(activateButtonHandler);     //activateButton listener (can initiate in global)
-        upgradeButton.onClick.AddListener(upgradeButtonHandler);     //activateButton listener (can initiate in global)
 
-        //set loading bar inactive
-        canvas.SetActive(false);
+        //NO NEED TO CREATE BUTTON HANDLERS SINCE WE CAN ADD ON CLICK IN UNITY EDITOR
+        //create button handlers
+        //activateButton.onClick.AddListener(activateButtonHandler);     //activateButton listener (can initiate in global)
+        //upgradeButton.onClick.AddListener(upgradeButtonHandler);     //activateButton listener (can initiate in global)
+
+        //hide all UI elements related after the business is unlocked
+        unlockedCanvas.SetActive(false);
 
     }
 
     //"upgradeButton" Handler
-    void upgradeButtonHandler()
+    void upgradeBusinessHandler()
     {
-        //increase level and update text
+        //Increase level and update text
         level++;
         levelText.text = level.ToString();    
 
 
         //increase profit of business
-        baseProfit += profitIncreasePerLevel;       //increase profit of business 
+        baseProfit += profitIncreasePerLevel;
 
 
-        //update total money by subtracting upgrade cost (rounded after calculation)
-        totalMoneyObjectScript.totalMoney -= upgradeCost;   //SUBTRACT MONEY BEFORE YOU MODIFY UPGRADE COST BELOW     
-        totalMoneyObjectScript.totalMoney = (float)Math.Floor(totalMoneyObjectScript.totalMoney * 100) / 100;  //this simply rounds the value we got to 2 decimal places
+        //Update total money by subtracting upgrade cost (rounded after calculation)
+        totalMoneyObject.totalMoney -= upgradeCost;   //SUBTRACT MONEY BEFORE YOU MODIFY UPGRADE COST BELOW     
+        totalMoneyObject.totalMoney = (float)Math.Floor(totalMoneyObject.totalMoney * 100) / 100;  
+        //this above simply rounds the value we got to 2 decimal places
 
 
-        //update upgrade cost (rounded)
+        //Update upgrade cost (rounded)
         upgradeCost *= upgradeCostScale;            //this increased the upgradeCost
         upgradeCost = (float)Math.Floor(upgradeCost * 100) / 100;  //this simply rounds the value we got to 2 decimal places
 
@@ -107,10 +111,11 @@ public class prefabScriptMono : MonoBehaviour
 
     }
 
-    //"activateButton" Handler
-    void activateButtonHandler()
+
+    //THIS BUTTON WILL START THE LOADING BAR COROUTINE
+    public void activateButtonHandler()
     {
-        activateButton.interactable = false;              //button will UNCLICKABLE since its has started loading bar
+        activateButton.interactable = false;        //button will UNCLICKABLE since its has started loading bar
         StartCoroutine(MyCoroutine());              //start coroutine
     }
 
@@ -138,16 +143,25 @@ public class prefabScriptMono : MonoBehaviour
         activateButton.interactable = true;     //make button clickable again
 
         //need to update total money object
-        totalMoneyObjectScript.totalMoney += baseProfit;
+        totalMoneyObject.totalMoney += baseProfit;
 
         yield break;                            // End the coroutine
     }
 
-    // Update is called once per frame
     void Update()
     {
-        //if upgrade cost is less than total money make upgrade button interactable
-        if (upgradeCost <= totalMoneyObjectScript.totalMoney)
+        //IN ORDER TO UNLOCK THE BUSINESS
+        if (unlockCost <= totalMoneyObject.totalMoney)
+        {
+            unlockButton.interactable = false;
+        } else
+        {
+            unlockButton.interactable |= true;
+        }
+
+
+        //IN ORDER TO UPGRADE
+        if (upgradeCost <= totalMoneyObject.totalMoney)
         {
             upgradeButton.interactable = true;
         } else

@@ -12,7 +12,7 @@ public class totalMoneyScript : MonoBehaviour
     public float totalMoney = 0.00f;
 
     //instantiate text component
-    TextMeshProUGUI totalMoneyText;
+    [SerializeField] TextMeshProUGUI totalMoneyText;
 
 
     // Start is called before the first frame update
