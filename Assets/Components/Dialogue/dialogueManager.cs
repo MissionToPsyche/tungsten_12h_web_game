@@ -11,6 +11,8 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
 
+    public Animator animator;
+
 
     private Queue<string> sentencesQueue;
 
@@ -21,6 +23,8 @@ public class DialogueManager : MonoBehaviour
 
     public void startDialogue(Dialogue dialogue)
     {
+        animator.SetBool("IsOpen", true);
+
         //Debug.Log("Starting conversation with " + dialogue.name);
         nameText.text = dialogue.name;
 
@@ -43,13 +47,25 @@ public class DialogueManager : MonoBehaviour
             return;
         }
 
-        string singleSentence = sentencesQueue.Dequeue(); //this releases one sentence string and we save it so we can display it one at a time
+        string sentence = sentencesQueue.Dequeue(); //this releases one sentence string and we save it so we can display it one at a time
         //Debug.Log(singleSentence);
-        dialogueText.text = singleSentence;
+        StopAllCoroutines();
+        StartCoroutine(TypeSentence(sentence));
+    }
+
+    IEnumerator TypeSentence(string sentence)
+    {
+        dialogueText.text = "";
+
+        foreach (char letter in sentence.ToCharArray())
+        {
+            dialogueText.text += letter;
+            yield return null;
+        }
     }
 
     void EndDialogue()
     {
-        Debug.Log("End of Conversation");
+        animator.SetBool("IsOpen", false);
     }
 }
