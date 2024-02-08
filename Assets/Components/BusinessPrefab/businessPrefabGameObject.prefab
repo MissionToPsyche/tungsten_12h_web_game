@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2486851645272228491}
   - component: {fileID: 921867341980708537}
   - component: {fileID: 5270383155698329241}
+  - component: {fileID: 3485048968847794191}
   m_Layer: 0
   m_Name: unlockButton
   m_TagString: Untagged
@@ -151,6 +152,21 @@ MonoBehaviour:
   unlockCanvas: {fileID: 3167792555339812208}
   unlockedCanvas: {fileID: 4715354385121623202}
   unlockButton: {fileID: 921867341980708537}
+--- !u!114 &3485048968847794191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60277995369059109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb391df5e2ead10449364cf5d2b6ad3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences: []
 --- !u!1 &857097647982690290
 GameObject:
   m_ObjectHideFlags: 0

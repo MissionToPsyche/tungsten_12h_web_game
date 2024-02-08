@@ -993,7 +993,7 @@ GameObject:
   - component: {fileID: 546135996}
   - component: {fileID: 546135997}
   m_Layer: 5
-  m_Name: Circle
+  m_Name: NpcPic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2299,6 +2299,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: dialogue.name
+      value: robot1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: nice we have our first business
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: asdfqrv
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: asdfre
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: dialogue.sentences.Array.data[3]
+      value: asdvr
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: dialogue.sentences.Array.data[4]
+      value: asdgr
+      objectReference: {fileID: 0}
     - target: {fileID: 5622840529765545675, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: level
       value: 1
@@ -2488,6 +2516,18 @@ PrefabInstance:
     - target: {fileID: 2910098693919687242, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: dialogue.name
+      value: robot2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: bozosoo
       objectReference: {fileID: 0}
     - target: {fileID: 6227285583134176676, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: m_Name

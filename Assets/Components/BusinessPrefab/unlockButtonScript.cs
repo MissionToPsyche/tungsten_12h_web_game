@@ -20,16 +20,21 @@ public class unlockButtonScript : MonoBehaviour
 
     [SerializeField] Button unlockButton;           //button used to make interactable/uninteractable depending on current money
 
+    private dialogueTrigger dialogueTrigger;        //since dialogueTrigger a monoscript we attach and can get component
 
     //SAY I WANT TO ACCESS AN OBJECT THAT IS OUTSIDE THE HIERARCHY LIKE THIS
     //DO I JUST SIMPLY FIND IT??
     totalMoneyScript totalMoneyObject;
+
+
+    bool unlockableDialogueShown = false;
 
     private void Awake()
     {
         //manually find totalMoneyObject and get script to access variable
         totalMoneyObject = GameObject.Find("totalMoney").GetComponent<totalMoneyScript>();    //note this gets only the gameobject
         businessVariables = variableObject.GetComponent<businessVariables>();
+        dialogueTrigger = GetComponent<dialogueTrigger>();
 
     }
 
@@ -45,7 +50,13 @@ public class unlockButtonScript : MonoBehaviour
         //allow clickable button if their is enough money
         if (businessVariables.unlockCost <= totalMoneyObject.totalMoney)
         {
+            if (unlockableDialogueShown == false)
+            {
+                unlockableDialogueShown=true;
+                dialogueTrigger.triggerDialogue();
+            }
             unlockButton.interactable = true;
+
         } else
         {
             unlockButton.interactable = false;
