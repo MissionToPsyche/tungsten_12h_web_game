@@ -1127,6 +1127,7 @@ MonoBehaviour:
     sentences:
     - Welcome my liege, we will conquer the milky way starting off by that astroid
     - First we need to get our first business going.
+  sideToOpen: 
 --- !u!114 &670357004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2300,6 +2301,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: sideToOpen
+      value: right
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: dialogue.name
       value: robot1
       objectReference: {fileID: 0}
@@ -2516,6 +2521,10 @@ PrefabInstance:
     - target: {fileID: 2910098693919687242, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: sideToOpen
+      value: right
       objectReference: {fileID: 0}
     - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: dialogue.name
