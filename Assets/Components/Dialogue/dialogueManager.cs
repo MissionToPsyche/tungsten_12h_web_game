@@ -16,17 +16,14 @@ public class DialogueManager : MonoBehaviour
 
     private Queue<string> sentencesQueue;
 
-    private string sideToOpen;
-
     void Start()
     {
         sentencesQueue = new Queue<string>();
     }
 
-    public void startDialogue(Dialogue dialogue, string pSideToOpen)
+    public void startDialogue(Dialogue dialogue)
     {
-        sideToOpen = pSideToOpen;
-        animator.SetBool(sideToOpen, true);
+        animator.SetBool("IsOpen", true);
 
         //Debug.Log("Starting conversation with " + dialogue.name);
         nameText.text = dialogue.name;
@@ -69,6 +66,6 @@ public class DialogueManager : MonoBehaviour
 
     void EndDialogue()
     {
-        animator.SetBool(sideToOpen, false);
+        animator.SetBool("IsOpen", false);
     }
 }
