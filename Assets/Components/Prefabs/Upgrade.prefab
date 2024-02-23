@@ -122,9 +122,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3067387508409489933}
-        m_TargetAssemblyTypeName: UpgradePrefab, Assembly-CSharp
-        m_MethodName: updateMultiplier
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UpgradeColorChange, Assembly-CSharp
+        m_MethodName: OnButtonClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -147,6 +147,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   varibleObject: {fileID: 0}
+  ButtonText: {fileID: 0}
+  buttonGameObject: {fileID: 0}
 --- !u!1 &9098805258968065988
 GameObject:
   m_ObjectHideFlags: 0
