@@ -3,12 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System;
 
 public class UpgradePrefab : MonoBehaviour
 {
     [SerializeField] GameObject varibleObject;
     [SerializeField] TextMeshProUGUI ButtonText;
     [SerializeField] Button buttonGameObject;
+    [SerializeField] GameObject unlockedCanvas;
+    [SerializeField] float costUp1;
+    [SerializeField] float costUp2;
+    [SerializeField] float costUp3;
     businessVariables businessVariable;
     totalMoneyScript totalMoneyObject;
     private int upgradeTime;
@@ -22,34 +27,54 @@ public class UpgradePrefab : MonoBehaviour
 
     public void updateMultiplier()
     {
-        if(totalMoneyObject.totalMoney >= businessVariable.upgradeCost)
+        if (upgradeTime >= 3)
         {
-            if(upgradeTime >= 3)
-            {
-                buttonGameObject.interactable = false;
-            }
-            businessVariable.level++;
-            businessVariable.baseProfit += businessVariable.profitIncreasePerLevel;
-            totalMoneyObject.totalMoney -= businessVariable.upgradeCost;
-            businessVariable.upgradeCost *= businessVariable.upgradeCostScale;
-            // Update the profit multiplier based on upgradeTime
+            buttonGameObject.interactable = false;
+        }
+
+
+        // Update the profit multiplier based on upgradeTime
+        switch (upgradeTime)
+        {
+            case 1:
+                totalMoneyObject.totalMoney -= costUp1;
+                ButtonText.text = "Upgrade x3, This will cost: " + businessVariable.upgradeCost;
+                businessVariable.profitMultiplerUpgrade *= 2; // First upgrade to x2
+                break;
+            case 2:
+                totalMoneyObject.totalMoney -= costUp2;
+                ButtonText.text = "Upgrade x5, This will cost: " + businessVariable.upgradeCost;
+                businessVariable.profitMultiplerUpgrade *= 3; // Second upgrade to x3
+                break;
+            case 3:
+                totalMoneyObject.totalMoney -= costUp3;
+                ButtonText.text = "Maxed";
+                businessVariable.profitMultiplerUpgrade *= 5; // Third upgrade to x5
+                break;
+        }
+
+        upgradeTime++;
+    }
+
+    void Update()
+    {
+        if (unlockedCanvas.activeSelf)
+        {
             switch (upgradeTime)
             {
                 case 1:
-                    ButtonText.text = "Upgrade x3, This will cost: " + businessVariable.upgradeCost;
-                    businessVariable.profitMultiplerUpgrade = 2; // First upgrade to x2
+                    buttonGameObject.interactable = totalMoneyObject.totalMoney >= costUp1;
                     break;
                 case 2:
-                    ButtonText.text = "Upgrade x5, This will cost: " + businessVariable.upgradeCost;
-                    businessVariable.profitMultiplerUpgrade = 3; // Second upgrade to x3
+                    buttonGameObject.interactable = totalMoneyObject.totalMoney >= costUp2;
                     break;
                 case 3:
-                    ButtonText.text = "Maxed";
-                    businessVariable.profitMultiplerUpgrade = 5; // Third upgrade to x5
+                    buttonGameObject.interactable = totalMoneyObject.totalMoney >= costUp3;
                     break;
             }
-
-            upgradeTime++;
+        }
+        else {             
+            buttonGameObject.interactable = false;
         }
     }
 }
