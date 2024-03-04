@@ -100,13 +100,47 @@ public class managerScript : MonoBehaviour
         if (totalMoneyObject.totalMoney >= 10)
         {
             // Deduct $10 from the total money
-            totalMoneyObject.totalMoney -= 10;
-            Destroy(business1ManagerButton.gameObject); // erase the button
-            Destroy(managerNameText.gameObject);
-            Destroy(backgroundColor.gameObject);
+            totalMoneyObject.totalMoney -= 10;  
             isActive = true; // start auto filling progress bar
             business1ActivateButton.interactable = false; // disable the manual clickable button 
-  
+
+
+            // Get the parent GameObject of the business1ManagerButton
+            Transform managerPrefabTransform = business1ManagerButton.transform.parent;
+
+            // Get the index of the manager prefab in the layout group
+            int index = managerPrefabTransform.GetSiblingIndex();
+        
+            // Destroy the parent GameObject
+            Destroy(managerPrefabTransform.gameObject);
+
+            // Update positions of remaining managers
+            UpdateManagerPositions(index);
+
+            // Force the layout group to update immediately
+            LayoutRebuilder.ForceRebuildLayoutImmediate(managerPrefabTransform.parent.GetComponent<RectTransform>());
+           
         }
     }
+
+    private void UpdateManagerPositions(int removedIndex)
+    {
+      
+        // Get the parent transform of the manager prefabs
+        Transform managerContainer = business1ManagerButton.transform.parent.parent.parent;
+
+       
+        // Loop through each child of the manager container
+        for (int i = removedIndex + 1; i < managerContainer.childCount; i++)
+        {
+            // Get the transform of the current manager prefab
+            Transform managerPrefab = managerContainer.GetChild(i);
+
+            // Move the manager prefab and its entire hierarchy up in the hierarchy
+            managerPrefab.SetSiblingIndex(i - 1);
+        }
+
+      
+    }
+
 }
