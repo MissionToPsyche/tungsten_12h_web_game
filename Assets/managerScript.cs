@@ -8,8 +8,8 @@ public class managerScript : MonoBehaviour
 {
     [SerializeField] Slider loadingBar;
     [SerializeField] totalMoneyScript totalMoneyObject;
-    [SerializeField] Button business1ManagerButton;
-    [SerializeField] Button business1ActivateButton;
+    [SerializeField] Button businessManagerButton;
+    [SerializeField] Button businessActivateButton;
     [SerializeField] TextMeshProUGUI managerNameText;
 
     [SerializeField] GameObject backgroundColor;
@@ -23,10 +23,10 @@ public class managerScript : MonoBehaviour
     private void Start()
     {
         // Initially, disable the manager button
-        business1ManagerButton.interactable = false;
+        businessManagerButton.interactable = false;
 
         // Get the Image component from the GameObject that contains the managerScript component
-        buttonImage = business1ManagerButton.GetComponent<Image>();
+        buttonImage = businessManagerButton.GetComponent<Image>();
 
         // Set the color of the button's image to grey
         buttonImage.color = Color.grey;
@@ -46,7 +46,7 @@ public class managerScript : MonoBehaviour
         {
             Debug.Log("Manager Unlocked!");
             isManagerUnlocked = true;
-            business1ManagerButton.interactable = true;
+            businessManagerButton.interactable = true;
 
 
             // Set the color of the button's image to pink
@@ -102,11 +102,11 @@ public class managerScript : MonoBehaviour
             // Deduct $10 from the total money
             totalMoneyObject.totalMoney -= 10;  
             isActive = true; // start auto filling progress bar
-            business1ActivateButton.interactable = false; // disable the manual clickable button 
+            businessActivateButton.interactable = false; // disable the manual clickable button 
 
 
             // Get the parent GameObject of the business1ManagerButton
-            Transform managerPrefabTransform = business1ManagerButton.transform.parent;
+            Transform managerPrefabTransform = businessManagerButton.transform.parent;
 
             // Get the index of the manager prefab in the layout group
             int index = managerPrefabTransform.GetSiblingIndex();
@@ -127,7 +127,7 @@ public class managerScript : MonoBehaviour
     {
       
         // Get the parent transform of the manager prefabs
-        Transform managerContainer = business1ManagerButton.transform.parent.parent.parent;
+        Transform managerContainer = businessManagerButton.transform.parent.parent.parent;
 
        
         // Loop through each child of the manager container
