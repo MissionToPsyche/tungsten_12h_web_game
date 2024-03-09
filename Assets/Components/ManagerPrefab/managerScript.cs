@@ -10,11 +10,12 @@ public class managerScript : MonoBehaviour
     [SerializeField] totalMoneyScript totalMoneyObject;
     [SerializeField] Button businessManagerButton;
     [SerializeField] Button businessActivateButton;
-    [SerializeField] TextMeshProUGUI managerNameText;
-
-    [SerializeField] GameObject backgroundColor;
+    [SerializeField] GameObject managerBlock;
     [SerializeField] float fillDuration = 1f; // Time in seconds to fill the loading bar
     [SerializeField] float baseProfit = 1f; // Amount of money added when loading bar is filled
+    [SerializeField] float unlockAmount; // Amount of money added when loading bar is filled
+
+   // [SerializeField] private businessScript myBusiness;
 
     private bool isActive = false;
     private bool isManagerUnlocked = false;
@@ -30,8 +31,12 @@ public class managerScript : MonoBehaviour
 
         // Set the color of the button's image to grey
         buttonImage.color = Color.grey;
-        // Get the Text component from the GameObject that contains the managerScript component
-        //  managerNameText = transform.Find("Canvas/managerNameText").GetComponent<TextMeshProUGUI>();
+
+        if (managerBlock == null)
+        {
+            Debug.LogError("managerBlock is not assigned on " + gameObject.name);
+        }
+
     }
 
 
@@ -42,7 +47,7 @@ public class managerScript : MonoBehaviour
         {
             FillLoadingBar();
         }
-        if(!isManagerUnlocked && totalMoneyObject.totalMoney >= 10) // gets the manager button to be clickable
+        if(!isManagerUnlocked && totalMoneyObject.totalMoney >= unlockAmount) // gets the manager button to be clickable
         {
             Debug.Log("Manager Unlocked!");
             isManagerUnlocked = true;
@@ -97,29 +102,42 @@ public class managerScript : MonoBehaviour
     // This method is called when the player accumulates $10
     public void UnlockManager()
     {
-        if (totalMoneyObject.totalMoney >= 10)
+        if (managerBlock == null)
+        {
+            Debug.LogError("Attempted to unlock manager, but managerBlock is not assigned.");
+            return; // Exit the function if managerBlock is null to avoid the error
+        }
+
+        if (totalMoneyObject.totalMoney >= unlockAmount)
         {
             // Deduct $10 from the total money
-            totalMoneyObject.totalMoney -= 10;  
+            totalMoneyObject.totalMoney -= unlockAmount;  
             isActive = true; // start auto filling progress bar
             businessActivateButton.interactable = false; // disable the manual clickable button 
 
 
             // Get the parent GameObject of the business1ManagerButton
-            Transform managerPrefabTransform = businessManagerButton.transform.parent;
+           // Transform managerPrefabTransform = managerBlock;
+      
 
             // Get the index of the manager prefab in the layout group
-            int index = managerPrefabTransform.GetSiblingIndex();
-        
-            // Destroy the parent GameObject
-            Destroy(managerPrefabTransform.gameObject);
+            int index = managerBlock.transform.GetSiblingIndex();
 
             // Update positions of remaining managers
             UpdateManagerPositions(index);
 
-            // Force the layout group to update immediately
-            LayoutRebuilder.ForceRebuildLayoutImmediate(managerPrefabTransform.parent.GetComponent<RectTransform>());
-           
+            // Destroy the parent GameObject but wait 1 second to make sure the layout gets rearranged correctly
+            Destroy(managerBlock, 1f);
+
+
+            // Optional: if you have UI or other elements that need to update immediately after this destruction
+            // Make sure to check if the parent is not null
+
+            if (managerBlock.transform.parent != null)
+            {
+                // Force the layout group to update immediately
+                LayoutRebuilder.ForceRebuildLayoutImmediate(managerBlock.transform.parent.GetComponent<RectTransform>());
+            }
         }
     }
 
