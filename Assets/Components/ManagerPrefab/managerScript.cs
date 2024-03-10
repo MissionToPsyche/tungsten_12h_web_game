@@ -15,11 +15,14 @@ public class managerScript : MonoBehaviour
     [SerializeField] float baseProfit = 1f; // Amount of money added when loading bar is filled
     [SerializeField] float unlockAmount; // Amount of money added when loading bar is filled
 
-   // [SerializeField] private businessScript myBusiness;
+    [SerializeField] GameObject variableObject;
+    
+
 
     private bool isActive = false;
     private bool isManagerUnlocked = false;
     private Image buttonImage;
+     businessVariables businessVariables;
 
     private void Start()
     {
@@ -30,12 +33,7 @@ public class managerScript : MonoBehaviour
         buttonImage = businessManagerButton.GetComponent<Image>();
 
         // Set the color of the button's image to grey
-        buttonImage.color = Color.grey;
-
-        if (managerBlock == null)
-        {
-            Debug.LogError("managerBlock is not assigned on " + gameObject.name);
-        }
+        buttonImage.color = Color.grey;      
 
     }
 
@@ -57,6 +55,8 @@ public class managerScript : MonoBehaviour
             // Set the color of the button's image to pink
             buttonImage.color = new Color(0.95f, 0.67f, 0.84f);
         }
+
+        
     }
 
     public void ToggleBusinessManager()
@@ -91,8 +91,13 @@ public class managerScript : MonoBehaviour
         {
             loadingBar.value = 1f;
 
+            businessVariables = variableObject.GetComponent<businessVariables>();
+            int level = businessVariables.level;
+
             // Add to the total money
-            totalMoneyObject.totalMoney += baseProfit;
+            totalMoneyObject.totalMoney += (baseProfit * level);
+
+            Debug.Log($"{businessActivateButton.name} added {(baseProfit*level)} to total money.");
 
             // Reset loading bar value
             loadingBar.value = 0f;
@@ -110,15 +115,11 @@ public class managerScript : MonoBehaviour
 
         if (totalMoneyObject.totalMoney >= unlockAmount)
         {
-            // Deduct $10 from the total money
+            // Deduct $unlockAmount from the total money
             totalMoneyObject.totalMoney -= unlockAmount;  
             isActive = true; // start auto filling progress bar
             businessActivateButton.interactable = false; // disable the manual clickable button 
 
-
-            // Get the parent GameObject of the business1ManagerButton
-           // Transform managerPrefabTransform = managerBlock;
-      
 
             // Get the index of the manager prefab in the layout group
             int index = managerBlock.transform.GetSiblingIndex();
@@ -128,9 +129,7 @@ public class managerScript : MonoBehaviour
 
             // Destroy the parent GameObject but wait 1 second to make sure the layout gets rearranged correctly
             Destroy(managerBlock, 1f);
-
-
-            // Optional: if you have UI or other elements that need to update immediately after this destruction
+    
             // Make sure to check if the parent is not null
 
             if (managerBlock.transform.parent != null)
