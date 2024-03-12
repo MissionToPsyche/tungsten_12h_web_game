@@ -42,6 +42,7 @@ public class managerScript : MonoBehaviour
 
     private void Update()
     {
+        
         // Check if the manager is active and fill the loading bar
         if (isActive)
         {
@@ -53,6 +54,12 @@ public class managerScript : MonoBehaviour
             isManagerUnlocked = true;
             businessManagerButton.interactable = true;
 
+            // Trigger the unlock notice animation
+            if (openManagerPanelAnimator != null)
+            {
+                Debug.Log("Animating!");
+                openManagerPanelAnimator.SetTrigger("TriggerManagerUnlock");
+            }
 
             // Set the color of the button's image to pink
             buttonImage.color = new Color(0.95f, 0.67f, 0.84f);
@@ -109,11 +116,11 @@ public class managerScript : MonoBehaviour
     // This method is called when the player accumulates $10
     public void UnlockManager()
     {
-        if (managerBlock == null)
+       /* if (managerBlock == null)
         {
             Debug.LogError("Attempted to unlock manager, but managerBlock is not assigned.");
             return; // Exit the function if managerBlock is null to avoid the error
-        }
+        }*/
 
         if (totalMoneyObject.totalMoney >= unlockAmount)
         {
@@ -123,12 +130,7 @@ public class managerScript : MonoBehaviour
             businessActivateButton.interactable = false; // disable the manual clickable button 
 
 
-            // Trigger the unlock notice animation
-            if (openManagerPanelAnimator != null)
-            {
-                Debug.Log("Animating!");
-                openManagerPanelAnimator.SetTrigger("TriggerManagerUnlock");
-            }
+           
 
             // Get the index of the manager prefab in the layout group
             int index = managerBlock.transform.GetSiblingIndex();
@@ -138,7 +140,7 @@ public class managerScript : MonoBehaviour
 
             // Destroy the parent GameObject but wait 1 second to make sure the layout gets rearranged correctly
             Destroy(managerBlock, 1f);
-    
+            
             // Make sure to check if the parent is not null
 
             if (managerBlock.transform.parent != null)

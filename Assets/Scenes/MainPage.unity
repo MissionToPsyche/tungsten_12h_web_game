@@ -172,6 +172,18 @@ PrefabInstance:
       propertyPath: businessActivateButton
       value: 
       objectReference: {fileID: 1296401124}
+    - target: {fileID: 556589516072431563, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: openManagerPanelAnimator
+      value: 
+      objectReference: {fileID: 1835244647}
+    - target: {fileID: 2331098237679112137, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2331098237679112137, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c66ba336574ddb34782b260386b90644, type: 3}
     - target: {fileID: 3999640043148134222, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_text
       value: "Manager Name\nRuns Business 5 \n$1,200,000"
@@ -236,6 +248,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 34f7cc1e32df9404dab3b056ccf1e197, type: 3}
+    - target: {fileID: 8078700112802287679, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8126667449366445597, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 95
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
     m_RemovedGameObjects: []
@@ -256,6 +276,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 261080892}
     m_Modifications:
+    - target: {fileID: 156681258547541256, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: m_Transition
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 156681258547541256, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -292,6 +316,30 @@ PrefabInstance:
       propertyPath: businessActivateButton
       value: 
       objectReference: {fileID: 1296401124}
+    - target: {fileID: 556589516072431563, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: openManagerPanelAnimator
+      value: 
+      objectReference: {fileID: 1835244647}
+    - target: {fileID: 2331098237679112137, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2331098237679112137, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c66ba336574ddb34782b260386b90644, type: 3}
+    - target: {fileID: 3510438691007315513, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3510438691007315513, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c66ba336574ddb34782b260386b90644, type: 3}
+    - target: {fileID: 3510438691007315513, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3999640043148134222, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_text
       value: "Manager Name\nRuns Business 1 \n$1,000"
@@ -352,6 +400,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5295628230799115305, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5295628230799115305, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5295628230799115305, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: m_Color.b
+      value: 0.22745098
+      objectReference: {fileID: 0}
+    - target: {fileID: 5295628230799115305, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: m_Color.g
+      value: 0.22745098
+      objectReference: {fileID: 0}
+    - target: {fileID: 5295628230799115305, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: m_Color.r
+      value: 0.22745098
+      objectReference: {fileID: 0}
+    - target: {fileID: 8078700112802287679, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8126667449366445597, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.353922
+      objectReference: {fileID: 0}
+    - target: {fileID: 8126667449366445597, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 95
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
     m_RemovedGameObjects: []
@@ -363,6 +443,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4374715027439255258, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2120555442}
+    - targetCorrespondingSourceObject: {fileID: 8384071233764039812, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1353503754}
   m_SourcePrefab: {fileID: 100100000, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
 --- !u!1 &44782857
 GameObject:
@@ -690,8 +773,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Manager
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -715,13 +798,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 76.38
+  m_fontSize: 72
   m_fontSizeBase: 76.38
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -774,6 +857,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 261080892}
     m_Modifications:
     - target: {fileID: 156681258547541256, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: m_Transition
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 156681258547541256, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 145832483}
@@ -809,6 +896,18 @@ PrefabInstance:
       propertyPath: businessActivateButton
       value: 
       objectReference: {fileID: 490134746}
+    - target: {fileID: 556589516072431563, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: openManagerPanelAnimator
+      value: 
+      objectReference: {fileID: 1835244647}
+    - target: {fileID: 2331098237679112137, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2331098237679112137, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c66ba336574ddb34782b260386b90644, type: 3}
     - target: {fileID: 3999640043148134222, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_text
       value: "Manager Name\nRuns Business 2 \n$15,000"
@@ -873,6 +972,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 3856db7a20534ef46aedcddd5c8cf065, type: 3}
+    - target: {fileID: 8078700112802287679, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8126667449366445597, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 95
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
     m_RemovedGameObjects: []
@@ -1212,6 +1319,18 @@ PrefabInstance:
       propertyPath: businessActivateButton
       value: 
       objectReference: {fileID: 1296401124}
+    - target: {fileID: 556589516072431563, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: openManagerPanelAnimator
+      value: 
+      objectReference: {fileID: 1835244647}
+    - target: {fileID: 2331098237679112137, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2331098237679112137, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c66ba336574ddb34782b260386b90644, type: 3}
     - target: {fileID: 3999640043148134222, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_text
       value: "Manager Name\nRuns Business 6 \n$10,000,000"
@@ -1276,6 +1395,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: ecc0020f1ef6b88438064d19199c5d29, type: 3}
+    - target: {fileID: 8078700112802287679, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8126667449366445597, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 95
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
     m_RemovedGameObjects: []
@@ -1332,6 +1459,18 @@ PrefabInstance:
       propertyPath: businessActivateButton
       value: 
       objectReference: {fileID: 1791028693}
+    - target: {fileID: 556589516072431563, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: openManagerPanelAnimator
+      value: 
+      objectReference: {fileID: 1835244647}
+    - target: {fileID: 2331098237679112137, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2331098237679112137, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c66ba336574ddb34782b260386b90644, type: 3}
     - target: {fileID: 3999640043148134222, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_text
       value: "Manager Name\nRuns Business 4 \n$500,000"
@@ -1396,6 +1535,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: b19f115bfe4ed914893282ce57cd04dc, type: 3}
+    - target: {fileID: 8078700112802287679, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8126667449366445597, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 95
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
     m_RemovedGameObjects: []
@@ -1452,6 +1599,10 @@ PrefabInstance:
       propertyPath: businessActivateButton
       value: 
       objectReference: {fileID: 1791028693}
+    - target: {fileID: 3836828371807783972, guid: 6e1a72d3054db1548b4948506792ac66, type: 3}
+      propertyPath: openManagerPanelAnimator
+      value: 
+      objectReference: {fileID: 1835244647}
     - target: {fileID: 5021695669879858958, guid: 6e1a72d3054db1548b4948506792ac66, type: 3}
       propertyPath: m_LocalPosition.x
       value: -406.71115
@@ -3233,6 +3384,10 @@ PrefabInstance:
       propertyPath: businessActivateButton
       value: 
       objectReference: {fileID: 986404712}
+    - target: {fileID: 3836828371807783972, guid: 6e1a72d3054db1548b4948506792ac66, type: 3}
+      propertyPath: openManagerPanelAnimator
+      value: 
+      objectReference: {fileID: 1835244647}
     - target: {fileID: 5021695669879858958, guid: 6e1a72d3054db1548b4948506792ac66, type: 3}
       propertyPath: m_LocalPosition.x
       value: -406.71115
@@ -3862,15 +4017,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 100
-  m_fontSizeBase: 100
+  m_fontSize: 165
+  m_fontSizeBase: 165
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -4224,6 +4379,10 @@ PrefabInstance:
       propertyPath: businessActivateButton
       value: 
       objectReference: {fileID: 899492037}
+    - target: {fileID: 3836828371807783972, guid: 6e1a72d3054db1548b4948506792ac66, type: 3}
+      propertyPath: openManagerPanelAnimator
+      value: 
+      objectReference: {fileID: 1835244647}
     - target: {fileID: 5021695669879858958, guid: 6e1a72d3054db1548b4948506792ac66, type: 3}
       propertyPath: m_LocalPosition.x
       value: -406.71115
@@ -4508,6 +4667,18 @@ PrefabInstance:
       propertyPath: businessActivateButton
       value: 
       objectReference: {fileID: 1296401124}
+    - target: {fileID: 556589516072431563, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: openManagerPanelAnimator
+      value: 
+      objectReference: {fileID: 1835244647}
+    - target: {fileID: 2331098237679112137, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2331098237679112137, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c66ba336574ddb34782b260386b90644, type: 3}
     - target: {fileID: 3999640043148134222, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_text
       value: "Manager Name\nRuns Business 8 \n$555,555,555"
@@ -4572,6 +4743,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: d8e0caae97e2b3f4ab2c5017c53f9827, type: 3}
+    - target: {fileID: 8078700112802287679, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8126667449366445597, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 95
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
     m_RemovedGameObjects: []
@@ -4738,7 +4917,7 @@ MonoBehaviour:
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 40
+  m_fontSizeMin: 50
   m_fontSizeMax: 100
   m_fontStyle: 0
   m_HorizontalAlignment: 2
@@ -4750,7 +4929,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_enableWordWrapping: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -4770,7 +4949,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 50}
+  m_margin: {x: 0, y: 0, z: 0, w: 120}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 1
@@ -5165,6 +5344,62 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1353503750 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8384071233764039812, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+  m_PrefabInstance: {fileID: 43588809}
+  m_PrefabAsset: {fileID: 0}
+--- !u!331 &1353503754
+SpriteMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1353503750}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10758, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: c66ba336574ddb34782b260386b90644, type: 3}
+  m_MaskAlphaCutoff: 0.2
+  m_FrontSortingLayerID: 0
+  m_BackSortingLayerID: 0
+  m_FrontSortingLayer: 0
+  m_BackSortingLayer: 0
+  m_FrontSortingOrder: 0
+  m_BackSortingOrder: 0
+  m_IsCustomRangeActive: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1359481276 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3294576540555112246, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
@@ -5480,6 +5715,10 @@ PrefabInstance:
       propertyPath: businessActivateButton
       value: 
       objectReference: {fileID: 323196939}
+    - target: {fileID: 3836828371807783972, guid: 6e1a72d3054db1548b4948506792ac66, type: 3}
+      propertyPath: openManagerPanelAnimator
+      value: 
+      objectReference: {fileID: 1835244647}
     - target: {fileID: 5021695669879858958, guid: 6e1a72d3054db1548b4948506792ac66, type: 3}
       propertyPath: m_LocalPosition.x
       value: -406.71115
@@ -5571,6 +5810,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1365763748}
     - target: {fileID: 3836828371807783972, guid: 6e1a72d3054db1548b4948506792ac66, type: 3}
+      propertyPath: ManagerPanelButton
+      value: 
+      objectReference: {fileID: 1835244641}
+    - target: {fileID: 3836828371807783972, guid: 6e1a72d3054db1548b4948506792ac66, type: 3}
       propertyPath: businessManagerButton
       value: 
       objectReference: {fileID: 1003713675}
@@ -5578,6 +5821,10 @@ PrefabInstance:
       propertyPath: businessActivateButton
       value: 
       objectReference: {fileID: 490134746}
+    - target: {fileID: 3836828371807783972, guid: 6e1a72d3054db1548b4948506792ac66, type: 3}
+      propertyPath: openManagerPanelAnimator
+      value: 
+      objectReference: {fileID: 1835244647}
     - target: {fileID: 5021695669879858958, guid: 6e1a72d3054db1548b4948506792ac66, type: 3}
       propertyPath: m_LocalPosition.x
       value: -406.71115
@@ -5995,6 +6242,18 @@ PrefabInstance:
       propertyPath: businessActivateButton
       value: 
       objectReference: {fileID: 1296401124}
+    - target: {fileID: 556589516072431563, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: openManagerPanelAnimator
+      value: 
+      objectReference: {fileID: 1835244647}
+    - target: {fileID: 2331098237679112137, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2331098237679112137, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c66ba336574ddb34782b260386b90644, type: 3}
     - target: {fileID: 3999640043148134222, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_text
       value: "Manager Name\nRuns Business 7 \n$111,111,111"
@@ -6059,6 +6318,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: c03aaef8c82e46549871c27ef5068279, type: 3}
+    - target: {fileID: 8078700112802287679, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8126667449366445597, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 95
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
     m_RemovedGameObjects: []
@@ -6115,6 +6382,10 @@ PrefabInstance:
       propertyPath: businessActivateButton
       value: 
       objectReference: {fileID: 1087816838}
+    - target: {fileID: 3836828371807783972, guid: 6e1a72d3054db1548b4948506792ac66, type: 3}
+      propertyPath: openManagerPanelAnimator
+      value: 
+      objectReference: {fileID: 1835244647}
     - target: {fileID: 5021695669879858958, guid: 6e1a72d3054db1548b4948506792ac66, type: 3}
       propertyPath: m_LocalPosition.x
       value: -406.71115
@@ -6462,7 +6733,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 550, y: 0}
+  m_AnchoredPosition: {x: 800, y: 0}
   m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1777348637
@@ -6612,6 +6883,7 @@ GameObject:
   - component: {fileID: 1835244645}
   - component: {fileID: 1835244644}
   - component: {fileID: 1835244643}
+  - component: {fileID: 1835244647}
   m_Layer: 5
   m_Name: openManagerPanelButton
   m_TagString: Untagged
@@ -6628,7 +6900,7 @@ RectTransform:
   m_GameObject: {fileID: 1835244641}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 1}
-  m_LocalScale: {x: 1.5751, y: 1.5625, z: 1}
+  m_LocalScale: {x: 1.65, y: 1.65, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 112726729}
@@ -6671,7 +6943,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 3
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -6728,7 +7000,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: c66ba336574ddb34782b260386b90644, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6746,6 +7018,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1835244641}
   m_CullTransparentMesh: 1
+--- !u!95 &1835244647
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835244641}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 652b0d3a84595dd4a81a769cb63615d5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1845484725 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3836828371807783972, guid: 6e1a72d3054db1548b4948506792ac66, type: 3}
@@ -6806,6 +7099,18 @@ PrefabInstance:
       propertyPath: businessActivateButton
       value: 
       objectReference: {fileID: 323196939}
+    - target: {fileID: 556589516072431563, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: openManagerPanelAnimator
+      value: 
+      objectReference: {fileID: 1835244647}
+    - target: {fileID: 2331098237679112137, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2331098237679112137, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c66ba336574ddb34782b260386b90644, type: 3}
     - target: {fileID: 3999640043148134222, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_text
       value: "Manager Name\nRuns Business 3 \n$100,000"
@@ -6867,9 +7172,33 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5295628230799115305, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5295628230799115305, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: ddd04c4f4230094439b1b3618543f83d, type: 3}
+    - target: {fileID: 5295628230799115305, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: m_Color.b
+      value: 0.21960786
+      objectReference: {fileID: 0}
+    - target: {fileID: 5295628230799115305, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: m_Color.g
+      value: 0.21960786
+      objectReference: {fileID: 0}
+    - target: {fileID: 5295628230799115305, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: m_Color.r
+      value: 0.21960786
+      objectReference: {fileID: 0}
+    - target: {fileID: 8078700112802287679, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8126667449366445597, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 95
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
     m_RemovedGameObjects: []
@@ -6970,7 +7299,7 @@ MonoBehaviour:
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 50
+  m_fontSizeMin: 120
   m_fontSizeMax: 150
   m_fontStyle: 0
   m_HorizontalAlignment: 2
@@ -6982,7 +7311,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_enableWordWrapping: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -7236,6 +7565,10 @@ PrefabInstance:
       propertyPath: businessActivateButton
       value: 
       objectReference: {fileID: 189592029}
+    - target: {fileID: 3836828371807783972, guid: 6e1a72d3054db1548b4948506792ac66, type: 3}
+      propertyPath: openManagerPanelAnimator
+      value: 
+      objectReference: {fileID: 1835244647}
     - target: {fileID: 5021695669879858958, guid: 6e1a72d3054db1548b4948506792ac66, type: 3}
       propertyPath: m_LocalPosition.x
       value: -406.71115
@@ -7357,7 +7690,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -550, y: 0}
+  m_AnchoredPosition: {x: -800, y: 0}
   m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2027268517
@@ -7899,6 +8232,10 @@ PrefabInstance:
       propertyPath: businessActivateButton
       value: 
       objectReference: {fileID: 1296401124}
+    - target: {fileID: 3836828371807783972, guid: 6e1a72d3054db1548b4948506792ac66, type: 3}
+      propertyPath: openManagerPanelAnimator
+      value: 
+      objectReference: {fileID: 1835244647}
     - target: {fileID: 5021695669879858958, guid: 6e1a72d3054db1548b4948506792ac66, type: 3}
       propertyPath: m_LocalPosition.x
       value: -406.71115
