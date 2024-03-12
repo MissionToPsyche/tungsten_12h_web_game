@@ -161,6 +161,10 @@ PrefabInstance:
       value: 1200000
       objectReference: {fileID: 0}
     - target: {fileID: 556589516072431563, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: variableObject
+      value: 
+      objectReference: {fileID: 850523857}
+    - target: {fileID: 556589516072431563, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: totalMoneyObject
       value: 
       objectReference: {fileID: 1365763748}
@@ -276,6 +280,10 @@ PrefabInstance:
       propertyPath: unlockAmount
       value: 1000
       objectReference: {fileID: 0}
+    - target: {fileID: 556589516072431563, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: variableObject
+      value: 
+      objectReference: {fileID: 296799641}
     - target: {fileID: 556589516072431563, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: totalMoneyObject
       value: 
@@ -618,6 +626,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+--- !u!1 &104832015 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3294576540555112246, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+  m_PrefabInstance: {fileID: 1096522994}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &112726728
 GameObject:
   m_ObjectHideFlags: 0
@@ -702,8 +715,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 76.38
+  m_fontSizeBase: 76.38
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -784,6 +797,10 @@ PrefabInstance:
       propertyPath: unlockAmount
       value: 15000
       objectReference: {fileID: 0}
+    - target: {fileID: 556589516072431563, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: variableObject
+      value: 
+      objectReference: {fileID: 1107721784}
     - target: {fileID: 556589516072431563, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: totalMoneyObject
       value: 
@@ -1184,6 +1201,10 @@ PrefabInstance:
       value: 10000000
       objectReference: {fileID: 0}
     - target: {fileID: 556589516072431563, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: variableObject
+      value: 
+      objectReference: {fileID: 539354082}
+    - target: {fileID: 556589516072431563, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: totalMoneyObject
       value: 
       objectReference: {fileID: 1365763748}
@@ -1300,6 +1321,10 @@ PrefabInstance:
       value: 500000
       objectReference: {fileID: 0}
     - target: {fileID: 556589516072431563, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: variableObject
+      value: 
+      objectReference: {fileID: 1359481276}
+    - target: {fileID: 556589516072431563, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: totalMoneyObject
       value: 
       objectReference: {fileID: 1365763748}
@@ -1411,6 +1436,10 @@ PrefabInstance:
       propertyPath: unlockAmount
       value: 500000
       objectReference: {fileID: 0}
+    - target: {fileID: 3836828371807783972, guid: 6e1a72d3054db1548b4948506792ac66, type: 3}
+      propertyPath: variableObject
+      value: 
+      objectReference: {fileID: 1359481276}
     - target: {fileID: 3836828371807783972, guid: 6e1a72d3054db1548b4948506792ac66, type: 3}
       propertyPath: totalMoneyObject
       value: 
@@ -1743,6 +1772,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 273081718}
   m_CullTransparentMesh: 1
+--- !u!1 &296799641 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3294576540555112246, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+  m_PrefabInstance: {fileID: 1774269469}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &298902693
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1973,6 +2007,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &323831679 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3294576540555112246, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+  m_PrefabInstance: {fileID: 1068822279}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &351069734 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3294576540555112246, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+  m_PrefabInstance: {fileID: 1368915218}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &429860215 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2313229287413355097, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
@@ -2504,6 +2548,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &539354082 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3294576540555112246, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+  m_PrefabInstance: {fileID: 1808799348}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &546135995
 GameObject:
   m_ObjectHideFlags: 0
@@ -3169,6 +3218,10 @@ PrefabInstance:
       value: 1200000
       objectReference: {fileID: 0}
     - target: {fileID: 3836828371807783972, guid: 6e1a72d3054db1548b4948506792ac66, type: 3}
+      propertyPath: variableObject
+      value: 
+      objectReference: {fileID: 850523857}
+    - target: {fileID: 3836828371807783972, guid: 6e1a72d3054db1548b4948506792ac66, type: 3}
       propertyPath: totalMoneyObject
       value: 
       objectReference: {fileID: 1365763748}
@@ -3551,6 +3604,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 775644540}
   m_CullTransparentMesh: 1
+--- !u!1 &850523857 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3294576540555112246, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+  m_PrefabInstance: {fileID: 104299405}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &853761373 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 156681258547541256, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
@@ -4151,6 +4209,10 @@ PrefabInstance:
       value: 10000000
       objectReference: {fileID: 0}
     - target: {fileID: 3836828371807783972, guid: 6e1a72d3054db1548b4948506792ac66, type: 3}
+      propertyPath: variableObject
+      value: 
+      objectReference: {fileID: 539354082}
+    - target: {fileID: 3836828371807783972, guid: 6e1a72d3054db1548b4948506792ac66, type: 3}
       propertyPath: totalMoneyObject
       value: 
       objectReference: {fileID: 1365763748}
@@ -4397,6 +4459,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+--- !u!1 &1107721784 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3294576540555112246, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+  m_PrefabInstance: {fileID: 2034540388}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1121794440
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4429,6 +4496,10 @@ PrefabInstance:
       propertyPath: unlockAmount
       value: 555555600
       objectReference: {fileID: 0}
+    - target: {fileID: 556589516072431563, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: variableObject
+      value: 
+      objectReference: {fileID: 323831679}
     - target: {fileID: 556589516072431563, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: totalMoneyObject
       value: 
@@ -5094,6 +5165,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1359481276 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3294576540555112246, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+  m_PrefabInstance: {fileID: 298902693}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1365763746
 GameObject:
   m_ObjectHideFlags: 0
@@ -5389,6 +5465,10 @@ PrefabInstance:
       value: 100000
       objectReference: {fileID: 0}
     - target: {fileID: 3836828371807783972, guid: 6e1a72d3054db1548b4948506792ac66, type: 3}
+      propertyPath: variableObject
+      value: 
+      objectReference: {fileID: 104832015}
+    - target: {fileID: 3836828371807783972, guid: 6e1a72d3054db1548b4948506792ac66, type: 3}
       propertyPath: totalMoneyObject
       value: 
       objectReference: {fileID: 1365763748}
@@ -5482,6 +5562,10 @@ PrefabInstance:
       propertyPath: unlockAmount
       value: 15000
       objectReference: {fileID: 0}
+    - target: {fileID: 3836828371807783972, guid: 6e1a72d3054db1548b4948506792ac66, type: 3}
+      propertyPath: variableObject
+      value: 
+      objectReference: {fileID: 1107721784}
     - target: {fileID: 3836828371807783972, guid: 6e1a72d3054db1548b4948506792ac66, type: 3}
       propertyPath: totalMoneyObject
       value: 
@@ -5900,6 +5984,10 @@ PrefabInstance:
       value: 111111110
       objectReference: {fileID: 0}
     - target: {fileID: 556589516072431563, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: variableObject
+      value: 
+      objectReference: {fileID: 351069734}
+    - target: {fileID: 556589516072431563, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: totalMoneyObject
       value: 
       objectReference: {fileID: 1365763748}
@@ -6011,6 +6099,10 @@ PrefabInstance:
       propertyPath: unlockAmount
       value: 555555600
       objectReference: {fileID: 0}
+    - target: {fileID: 3836828371807783972, guid: 6e1a72d3054db1548b4948506792ac66, type: 3}
+      propertyPath: variableObject
+      value: 
+      objectReference: {fileID: 323831679}
     - target: {fileID: 3836828371807783972, guid: 6e1a72d3054db1548b4948506792ac66, type: 3}
       propertyPath: totalMoneyObject
       value: 
@@ -6703,6 +6795,10 @@ PrefabInstance:
       value: 100000
       objectReference: {fileID: 0}
     - target: {fileID: 556589516072431563, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
+      propertyPath: variableObject
+      value: 
+      objectReference: {fileID: 104832015}
+    - target: {fileID: 556589516072431563, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: totalMoneyObject
       value: 
       objectReference: {fileID: 1365763748}
@@ -7124,6 +7220,10 @@ PrefabInstance:
       propertyPath: unlockAmount
       value: 111111110
       objectReference: {fileID: 0}
+    - target: {fileID: 3836828371807783972, guid: 6e1a72d3054db1548b4948506792ac66, type: 3}
+      propertyPath: variableObject
+      value: 
+      objectReference: {fileID: 351069734}
     - target: {fileID: 3836828371807783972, guid: 6e1a72d3054db1548b4948506792ac66, type: 3}
       propertyPath: totalMoneyObject
       value: 
@@ -7783,6 +7883,10 @@ PrefabInstance:
       propertyPath: unlockAmount
       value: 1000
       objectReference: {fileID: 0}
+    - target: {fileID: 3836828371807783972, guid: 6e1a72d3054db1548b4948506792ac66, type: 3}
+      propertyPath: variableObject
+      value: 
+      objectReference: {fileID: 296799641}
     - target: {fileID: 3836828371807783972, guid: 6e1a72d3054db1548b4948506792ac66, type: 3}
       propertyPath: totalMoneyObject
       value: 

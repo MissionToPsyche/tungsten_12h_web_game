@@ -16,8 +16,8 @@ public class managerScript : MonoBehaviour
     [SerializeField] float unlockAmount; // Amount of money added when loading bar is filled
 
     [SerializeField] GameObject variableObject;
-    
-
+  
+    [SerializeField] Animator openManagerPanelAnimator;
 
     private bool isActive = false;
     private bool isManagerUnlocked = false;
@@ -33,7 +33,9 @@ public class managerScript : MonoBehaviour
         buttonImage = businessManagerButton.GetComponent<Image>();
 
         // Set the color of the button's image to grey
-        buttonImage.color = Color.grey;      
+        buttonImage.color = Color.grey;
+
+   
 
     }
 
@@ -120,6 +122,13 @@ public class managerScript : MonoBehaviour
             isActive = true; // start auto filling progress bar
             businessActivateButton.interactable = false; // disable the manual clickable button 
 
+
+            // Trigger the unlock notice animation
+            if (openManagerPanelAnimator != null)
+            {
+                Debug.Log("Animating!");
+                openManagerPanelAnimator.SetTrigger("TriggerManagerUnlock");
+            }
 
             // Get the index of the manager prefab in the layout group
             int index = managerBlock.transform.GetSiblingIndex();
