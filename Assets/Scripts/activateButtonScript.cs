@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using TMPro;
 using UnityEngine.UI;
 
 public class activateButtonScript : MonoBehaviour
 {
+    [SerializeField] TextMeshProUGUI countdownText;
+ [SerializeField] TextMeshProUGUI moneyGivenText;
     [SerializeField] GameObject variableObject;
     businessVariables businessVariables;
 
@@ -46,15 +48,26 @@ public class activateButtonScript : MonoBehaviour
             // Increment the elapsed time
             elapsedTime += Time.deltaTime;
 
+            countdownText.text = Mathf.Ceil(businessVariables.secondsToFinish - elapsedTime).ToString() + "s";
+
+        moneyGivenText.text = "$" + businessVariables.baseProfit * businessVariables.profitMultiplerUpgrade;
+
+
+
             // Wait for the next frame
             yield return null;
         }
 
+        countdownText.text = Mathf.Ceil(businessVariables.secondsToFinish).ToString() + "s";
+
+//loadingBar.ForeColor
+
         loadingBar.value = 0f;                  //reset the loading bar
         activateButton.interactable = true;     //make button clickable again
 
+
         //need to update total money object
-        totalMoneyObject.totalMoney += businessVariables.baseProfit;
+        totalMoneyObject.totalMoney += businessVariables.baseProfit * businessVariables.profitMultiplerUpgrade;
 
         yield break;                            // End the coroutine
     }
