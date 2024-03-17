@@ -6,38 +6,36 @@ using TMPro;
 
 public class managerScript : MonoBehaviour
 {
-    [SerializeField] Slider loadingBar;
-    [SerializeField] totalMoneyScript totalMoneyObject;
-    [SerializeField] Button businessManagerButton;
-    [SerializeField] Button businessActivateButton;
-    [SerializeField] GameObject managerBlock;
+    [SerializeField] Slider loadingBar; // progress bar
+    [SerializeField] totalMoneyScript totalMoneyObject; // script controlling total money
+    [SerializeField] Button businessManagerButton; // button to hire manager
+    [SerializeField] Button businessActivateButton; // the businesses button
+    [SerializeField] GameObject managerBlock; // manager pic, description, and hire button
     [SerializeField] float fillDuration = 1f; // Time in seconds to fill the loading bar
     [SerializeField] float baseProfit = 1f; // Amount of money added when loading bar is filled
-    [SerializeField] float unlockAmount; // Amount of money added when loading bar is filled
+    [SerializeField] float unlockAmount; // Amount needed to unlock manager
+    [SerializeField] Animator openManagerPanelAnimator; 
+    [SerializeField] GameObject variableObject; // business variables that are attached to each businessPrefab
+    businessVariables businessVariables;
+    
 
-    [SerializeField] GameObject variableObject;
-  
-    [SerializeField] Animator openManagerPanelAnimator;
-
-    private bool isActive = false;
-    private bool isManagerUnlocked = false;
-    private Image buttonImage;
-     businessVariables businessVariables;
+    private bool isActive = false;  // true if manager was hired
+    private bool isManagerUnlocked = false; // true if manager is unlocked and ready for purchase
+    private Image buttonImage; // for getting the hire button image for the manager.
+   
 
     private void Start()
     {
-        // Initially, disable the manager button
+        // Initially disable the manager button
         businessManagerButton.interactable = false;
 
-        // Get the Image component from the GameObject that contains the managerScript component
+        // Get the Image component from the businessMangerButton
         buttonImage = businessManagerButton.GetComponent<Image>();
 
         // Set the color of the button's image to grey
         buttonImage.color = Color.grey;
 
-   
-
-    }
+     }
 
 
     private void Update()
@@ -52,17 +50,17 @@ public class managerScript : MonoBehaviour
         {
             Debug.Log("Manager Unlocked!");
             isManagerUnlocked = true;
-            businessManagerButton.interactable = true;
+            businessManagerButton.interactable = true; // make the businessManager button clickable
 
-            // Trigger the unlock notice animation
+            // Trigger the unlock notice animation.
+            // The manager panel button should pulse and the text should change color for a few seconds to alert player that a manager is unlocked. 
             if (openManagerPanelAnimator != null)
             {
-                Debug.Log("Animating!");
                 openManagerPanelAnimator.SetTrigger("TriggerManagerUnlock");
             }
 
             // Set the color of the button's image to pink
-            buttonImage.color = new Color(0.95f, 0.67f, 0.84f);
+            buttonImage.color = new Color(0.647f, 0.24f, 0.357f);
         }
 
         
@@ -101,7 +99,7 @@ public class managerScript : MonoBehaviour
             loadingBar.value = 1f;
 
             businessVariables = variableObject.GetComponent<businessVariables>();
-            int level = businessVariables.level;
+            int level = businessVariables.level; // get how many stores(level) the player has so the total money will correctly reflect 
 
             // Add to the total money
             totalMoneyObject.totalMoney += (baseProfit * level);
@@ -113,15 +111,10 @@ public class managerScript : MonoBehaviour
         }
     }
 
-    // This method is called when the player accumulates $10
+    
     public void UnlockManager()
     {
-       /* if (managerBlock == null)
-        {
-            Debug.LogError("Attempted to unlock manager, but managerBlock is not assigned.");
-            return; // Exit the function if managerBlock is null to avoid the error
-        }*/
-
+   
         if (totalMoneyObject.totalMoney >= unlockAmount)
         {
             // Deduct $unlockAmount from the total money
@@ -130,22 +123,19 @@ public class managerScript : MonoBehaviour
             businessActivateButton.interactable = false; // disable the manual clickable button 
 
 
-           
-
             // Get the index of the manager prefab in the layout group
             int index = managerBlock.transform.GetSiblingIndex();
 
-            // Update positions of remaining managers
+            // Update positions of remaining managers in the scrollview
             UpdateManagerPositions(index);
 
-            // Destroy the parent GameObject but wait 1 second to make sure the layout gets rearranged correctly
+            // Destroy the manager that was hired but wait 1 second to make sure the layout gets rearranged correctly
             Destroy(managerBlock, 1f);
             
-            // Make sure to check if the parent is not null
 
             if (managerBlock.transform.parent != null)
             {
-                // Force the layout group to update immediately
+                // Force the layout group to update immediately. Move up the remaining managers in the scrollview
                 LayoutRebuilder.ForceRebuildLayoutImmediate(managerBlock.transform.parent.GetComponent<RectTransform>());
             }
         }
@@ -154,7 +144,7 @@ public class managerScript : MonoBehaviour
     private void UpdateManagerPositions(int removedIndex)
     {
       
-        // Get the parent transform of the manager prefabs
+        // Get the parent transform of the manager prefabs which is the ManagerContainer
         Transform managerContainer = businessManagerButton.transform.parent.parent.parent;
 
        
