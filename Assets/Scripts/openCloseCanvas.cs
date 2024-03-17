@@ -12,6 +12,7 @@ public class openCloseCanvas : MonoBehaviour
     {
         //whatever canvas we dragged into the script will close/open 
         canvas.SetActive(true);
+       
     }
 
     public void closePanel()
