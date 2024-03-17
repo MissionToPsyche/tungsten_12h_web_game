@@ -17,7 +17,7 @@ public class upgradeButtonScript : MonoBehaviour
     [SerializeField] Button upgradeButton;
     [SerializeField] TextMeshProUGUI upgradeCostText;
     [SerializeField] TextMeshProUGUI levelText;
-
+    [SerializeField] TextMeshProUGUI moneyGivenText;
 
 
     totalMoneyScript totalMoneyObject;
@@ -59,6 +59,9 @@ public class upgradeButtonScript : MonoBehaviour
         businessVariables.upgradeCost = (float)Math.Floor(businessVariables.upgradeCost * 100) / 100;  //this simply rounds the value we got to 2 decimal places
 
         upgradeCostText.text = businessVariables.upgradeCost.ToString() + "$"; //update upgrade cost text to new cost
+
+        moneyGivenText.text = "$" + businessVariables.baseProfit * businessVariables.profitMultiplerUpgrade;
+
     }
 
 

@@ -2137,6 +2137,10 @@ PrefabInstance:
       propertyPath: businessName
       value: iron
       objectReference: {fileID: 0}
+    - target: {fileID: 1933709948154282085, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: secondsToFinish
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2910098693919687242, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: m_LocalPosition.x
       value: 42
@@ -2335,13 +2339,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 615389161320995732, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1933709948154282085, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: baseProfit
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1933709948154282085, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: unlockCost
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1933709948154282085, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: upgradeCost
