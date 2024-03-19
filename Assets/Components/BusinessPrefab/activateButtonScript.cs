@@ -28,28 +28,8 @@ public class activateButtonScript : MonoBehaviour
     public void activateButtonHandler()
     {
         activateButton.interactable = false;        //button will UNCLICKABLE since its has started loading bar
-        milestoneUpgrade();
         StartCoroutine(MyCoroutine());              //start coroutine
     }
-
-    public void milestoneUpgrade()
-    {
-        //if we hit any of these milestones we reduce the half by half effectively doubling that business profits
-        if ((businessVariables.level == 25) ||
-            (businessVariables.level == 50) ||
-            (businessVariables.level == 75) ||
-            (businessVariables.level == 100) ||
-            (businessVariables.level == 200) ||
-            (businessVariables.level == 300) ||
-            (businessVariables.level == 400) ||
-            (businessVariables.level == 500)
-            )
-        {
-            businessVariables.secondsToFinish /= 2;
-        }
-    }
-
-
 
     IEnumerator MyCoroutine()
     {
