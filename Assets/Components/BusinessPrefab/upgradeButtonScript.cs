@@ -43,6 +43,8 @@ public class upgradeButtonScript : MonoBehaviour
         businessVariables.level++;
         levelText.text = businessVariables.level.ToString();
 
+        milestoneUpgrade(); //check if we hit a milestone to reduce the businesses time by half
+
 
         //increase profit of business
         businessVariables.baseProfit += businessVariables.profitIncreasePerLevel;
@@ -62,6 +64,23 @@ public class upgradeButtonScript : MonoBehaviour
 
         moneyGivenText.text = "$" + businessVariables.baseProfit * businessVariables.profitMultiplerUpgrade;
 
+    }
+
+    public void milestoneUpgrade()
+    {
+        //if we hit any of these milestones we reduce the half by half effectively doubling that business profits
+        if ((businessVariables.level == 25) ||
+            (businessVariables.level == 50) ||
+            (businessVariables.level == 75) ||
+            (businessVariables.level == 100) ||
+            (businessVariables.level == 200) ||
+            (businessVariables.level == 300) ||
+            (businessVariables.level == 400) ||
+            (businessVariables.level == 500)
+            )
+        {
+            businessVariables.secondsToFinish /= 2;
+        }
     }
 
 
