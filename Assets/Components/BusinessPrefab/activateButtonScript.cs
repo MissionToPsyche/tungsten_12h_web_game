@@ -17,6 +17,8 @@ public class activateButtonScript : MonoBehaviour
 
     totalMoneyScript totalMoneyObject;
 
+    bool coroutineRunning = false;
+
     private void Awake()
     {
         //manually find totalMoneyObject and get script to access variable
@@ -31,8 +33,36 @@ public class activateButtonScript : MonoBehaviour
         StartCoroutine(MyCoroutine());              //start coroutine
     }
 
+
+   
+    public void startInfiniteCoroutine()   //this button is reserved for the manager to forever run the business
+    {
+        StartCoroutine(infiniteCoroutine());
+    }
+
+    public IEnumerator infiniteCoroutine()
+    {
+        while (true){
+            activateButton.interactable = false;
+
+
+            //this solves the case where if user activated coroutine, we need to wait for that instance to finish
+            while (coroutineRunning)
+            {
+                yield return null; //do nothing 
+            }
+
+
+            yield return StartCoroutine(MyCoroutine()); //run the coroutine that loads the bar but wait until it finishes
+        }
+    }
+
     IEnumerator MyCoroutine()
     {
+        coroutineRunning = true; //mutex to immedietely lock loading bar 
+        activateButton.interactable = false;
+
+
         float elapsedTime = 0f;
 
         while (elapsedTime < businessVariables.secondsToFinish)
@@ -48,7 +78,8 @@ public class activateButtonScript : MonoBehaviour
 
             countdownText.text = Mathf.Ceil(businessVariables.secondsToFinish - elapsedTime).ToString() + "s";
 
-        moneyGivenText.text = "$" + businessVariables.baseProfit * businessVariables.profitMultiplerUpgrade;
+            moneyGivenText.text = "$" + businessVariables.baseProfit * businessVariables.profitMultiplerUpgrade;
+
 
 
 
@@ -58,7 +89,6 @@ public class activateButtonScript : MonoBehaviour
 
         countdownText.text = Mathf.Ceil(businessVariables.secondsToFinish).ToString() + "s";
 
-//loadingBar.ForeColor
 
         loadingBar.value = 0f;                  //reset the loading bar
         activateButton.interactable = true;     //make button clickable again
@@ -66,6 +96,8 @@ public class activateButtonScript : MonoBehaviour
 
         //need to update total money object
         totalMoneyObject.totalMoney += businessVariables.baseProfit * businessVariables.profitMultiplerUpgrade;
+
+        coroutineRunning = false; // release mutex
 
         yield break;                            // End the coroutine
     }
