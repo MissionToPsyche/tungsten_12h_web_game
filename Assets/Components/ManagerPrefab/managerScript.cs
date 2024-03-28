@@ -86,7 +86,7 @@ public class managerScript : MonoBehaviour
 
     IEnumerator ContinuousProcess()
     {
-    Debug.Log($"[ContinuousProcess] Started for {businessActivateButton.name}");
+   // Debug.Log($"[ContinuousProcess] Started for {businessActivateButton.name}");
     while (isActive)
         {
             // Fill the loading bar continuously
@@ -109,7 +109,7 @@ public class managerScript : MonoBehaviour
         // Ensure the loading bar is completely filled
         if (loadingBar.value >= 1f)
         {
-            Debug.Log($"[FillLoadingBar] {businessActivateButton.name} - Final value before reset: {loadingBar.value}");
+           // Debug.Log($"[FillLoadingBar] {businessActivateButton.name} - Final value before reset: {loadingBar.value}");
             loadingBar.value = 1f;
 
             businessVariables = variableObject.GetComponent<businessVariables>();
@@ -118,7 +118,7 @@ public class managerScript : MonoBehaviour
             // Add to the total money
             totalMoneyObject.totalMoney += (baseProfit * level);
 
-            Debug.Log($"{businessActivateButton.name} added {(baseProfit * level)} to total money.");
+          //  Debug.Log($"{businessActivateButton.name} added {(baseProfit * level)} to total money.");
 
             // Reset loading bar value
             loadingBar.value = 0f;
@@ -128,7 +128,7 @@ public class managerScript : MonoBehaviour
         }
         else if (loadingBar.value == 0f)
         {
-            Debug.Log($"[FillLoadingBar] {businessActivateButton.name} - Loading bar was reset externally.");
+            //Debug.Log($"[FillLoadingBar] {businessActivateButton.name} - Loading bar was reset externally.");
         }
             
 }
@@ -136,7 +136,7 @@ public class managerScript : MonoBehaviour
     
     public void UnlockManager()
     {
-    Debug.Log($"[UnlockManager] Attempting to unlock manager {businessActivateButton.name}.");
+   // Debug.Log($"[UnlockManager] Attempting to unlock manager {businessActivateButton.name}.");
     if (totalMoneyObject.totalMoney >= unlockAmount)
         {
       
@@ -149,7 +149,7 @@ public class managerScript : MonoBehaviour
             // Get the index of the manager prefab in the layout group
             int index = managerBlock.transform.GetSiblingIndex();
 
-        Debug.Log($"[UnlockManager] Manager {businessActivateButton.name} unlocked. Total money after unlock: {totalMoneyObject.totalMoney}");
+       // Debug.Log($"[UnlockManager] Manager {businessActivateButton.name} unlocked. Total money after unlock: {totalMoneyObject.totalMoney}");
 
         // Update positions of remaining managers in the scrollview
         UpdateManagerPositions(index);
