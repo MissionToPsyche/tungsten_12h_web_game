@@ -22,7 +22,9 @@ public class managerScript : MonoBehaviour
     private bool isActive = false;  // true if manager was hired
     private bool isManagerUnlocked = false; // true if manager is unlocked and ready for purchase
     private Image buttonImage; // for getting the hire button image for the manager.
-   
+
+    private IEnumerator coroutineReference = null; // Store reference to the coroutine
+
 
     private void Start()
     {
@@ -44,11 +46,13 @@ public class managerScript : MonoBehaviour
         // Check if the manager is active and fill the loading bar
         if (isActive)
         {
+           // Debug.Log($"[Update] Manager {businessActivateButton.name} is active. Loading bar current value: {loadingBar.value}");
             FillLoadingBar();
         }
         if(!isManagerUnlocked && totalMoneyObject.totalMoney >= unlockAmount) // gets the manager button to be clickable
         {
             Debug.Log("Manager Unlocked!");
+
             isManagerUnlocked = true;
             businessManagerButton.interactable = true; // make the businessManager button clickable
 
@@ -61,10 +65,12 @@ public class managerScript : MonoBehaviour
 
             // Set the color of the button's image to pink
             buttonImage.color = new Color(0.647f, 0.24f, 0.357f);
+           // Debug.Log($"[Update] Manager {businessActivateButton.name} is now unlocked.");
         }
+    }
 
         
-    }
+    
 
     public void ToggleBusinessManager()
     {
@@ -72,19 +78,22 @@ public class managerScript : MonoBehaviour
         // If manager is active, start the continuous process
         if (isActive)
         {
+       
+            coroutineReference = ContinuousProcess();
             StartCoroutine(ContinuousProcess());
         }
     }
 
     IEnumerator ContinuousProcess()
     {
-        while (isActive)
+   // Debug.Log($"[ContinuousProcess] Started for {businessActivateButton.name}");
+    while (isActive)
         {
             // Fill the loading bar continuously
             FillLoadingBar();
-
-            // Wait for a brief period before filling again
-            yield return new WaitForSeconds(fillDuration);
+       // Debug.Log($"[ContinuousProcess] {businessActivateButton.name} loading bar fill coroutine is running.");
+        // Wait for a brief period before filling again
+        yield return new WaitForSeconds(fillDuration);
         }
     }
 
@@ -92,10 +101,15 @@ public class managerScript : MonoBehaviour
     {
         // Increment loading bar value gradually
         loadingBar.value += Time.deltaTime / fillDuration;
+        //Debug.Log($"[FillLoadingBar] {businessActivateButton.name} loading bar filling. Current value: {loadingBar.value}");
+
+        // Use a threshold to account for floating-point precision issues
+        float fillThreshold = 0.999f;
 
         // Ensure the loading bar is completely filled
         if (loadingBar.value >= 1f)
         {
+           // Debug.Log($"[FillLoadingBar] {businessActivateButton.name} - Final value before reset: {loadingBar.value}");
             loadingBar.value = 1f;
 
             businessVariables = variableObject.GetComponent<businessVariables>();
@@ -104,21 +118,30 @@ public class managerScript : MonoBehaviour
             // Add to the total money
             totalMoneyObject.totalMoney += (baseProfit * level);
 
-            Debug.Log($"{businessActivateButton.name} added {(baseProfit*level)} to total money.");
+          //  Debug.Log($"{businessActivateButton.name} added {(baseProfit * level)} to total money.");
 
             // Reset loading bar value
             loadingBar.value = 0f;
+
+
+            // Debug to check if any other code is resetting the bar
         }
-    }
+        else if (loadingBar.value == 0f)
+        {
+            //Debug.Log($"[FillLoadingBar] {businessActivateButton.name} - Loading bar was reset externally.");
+        }
+            
+}
 
     
     public void UnlockManager()
     {
-   
-        if (totalMoneyObject.totalMoney >= unlockAmount)
+   // Debug.Log($"[UnlockManager] Attempting to unlock manager {businessActivateButton.name}.");
+    if (totalMoneyObject.totalMoney >= unlockAmount)
         {
-            // Deduct $unlockAmount from the total money
-            totalMoneyObject.totalMoney -= unlockAmount;  
+      
+        // Deduct $unlockAmount from the total money
+        totalMoneyObject.totalMoney -= unlockAmount;  
             isActive = true; // start auto filling progress bar
             businessActivateButton.interactable = false; // disable the manual clickable button 
 
@@ -126,8 +149,10 @@ public class managerScript : MonoBehaviour
             // Get the index of the manager prefab in the layout group
             int index = managerBlock.transform.GetSiblingIndex();
 
-            // Update positions of remaining managers in the scrollview
-            UpdateManagerPositions(index);
+       // Debug.Log($"[UnlockManager] Manager {businessActivateButton.name} unlocked. Total money after unlock: {totalMoneyObject.totalMoney}");
+
+        // Update positions of remaining managers in the scrollview
+        UpdateManagerPositions(index);
 
             // Destroy the manager that was hired but wait 1 second to make sure the layout gets rearranged correctly
             Destroy(managerBlock, 1f);
@@ -139,6 +164,9 @@ public class managerScript : MonoBehaviour
                 LayoutRebuilder.ForceRebuildLayoutImmediate(managerBlock.transform.parent.GetComponent<RectTransform>());
             }
         }
+        // Reset the coroutine reference when the manager is unlocked
+        coroutineReference = null;
+
     }
 
     private void UpdateManagerPositions(int removedIndex)
