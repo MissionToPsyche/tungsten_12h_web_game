@@ -17,7 +17,7 @@ public class UpgradePrefab : MonoBehaviour
     businessVariables businessVariable;
     totalMoneyScript totalMoneyObject;
     private int upgradeTime;
-
+    private bool upgradeUnlocked = false;
     private void Awake()
     {
         businessVariable = varibleObject.GetComponent<businessVariables>();
@@ -77,4 +77,5 @@ public class UpgradePrefab : MonoBehaviour
             buttonGameObject.interactable = false;
         }
     }
+
 }
