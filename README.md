@@ -1,2 +1,23 @@
 # NASA-12H
-Develop a web game applicable to all browsers to promote, educate, and entertain on the Psyche mission set to launch on October 5th, 2023.
+## Web-Based Game for Mission to Psyche 
+
+**Game Link**
+
+insert game link here
+
+
+Things used in this project: 
+- Unity
+- WebGL
+
+
+## Preview 
+**Game Description** 
+
+## How to build? 
+
+## Team Members 
+- Amanda Holt
+- Parth Rawat
+- Saadhana Srikar
+- Joaquin Uribe 
