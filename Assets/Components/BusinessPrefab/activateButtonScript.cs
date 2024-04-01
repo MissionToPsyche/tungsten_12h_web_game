@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class activateButtonScript : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI countdownText;
- [SerializeField] TextMeshProUGUI moneyGivenText;
+    [SerializeField] TextMeshProUGUI moneyGivenText;
     [SerializeField] GameObject variableObject;
     businessVariables businessVariables;
 
@@ -15,14 +15,14 @@ public class activateButtonScript : MonoBehaviour
     [SerializeField] Button activateButton;
     [SerializeField] Slider loadingBar;
 
-    totalMoneyScript totalMoneyObject;
+    totalMoneyScript totalMoneyScript;
 
     bool coroutineRunning = false;
 
     private void Awake()
     {
         //manually find totalMoneyObject and get script to access variable
-        totalMoneyObject = GameObject.Find("totalMoney").GetComponent<totalMoneyScript>();    //note this gets only the gameobject
+        totalMoneyScript = GameObject.Find("totalMoney").GetComponent<totalMoneyScript>();    //note this gets only the gameobject
         businessVariables = variableObject.GetComponent<businessVariables>();
     }
 
@@ -95,7 +95,7 @@ public class activateButtonScript : MonoBehaviour
 
 
         //need to update total money object
-        totalMoneyObject.totalMoney += businessVariables.baseProfit * businessVariables.profitMultiplerUpgrade;
+        totalMoneyScript.totalMoney += businessVariables.baseProfit * businessVariables.profitMultiplerUpgrade;
 
         coroutineRunning = false; // release mutex
 

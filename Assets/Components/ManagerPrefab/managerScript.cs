@@ -16,11 +16,12 @@ public class managerScript : MonoBehaviour
     //private IEnumerator coroutineReference = null; // Store reference to the coroutine
 
 
-    [SerializeField] totalMoneyScript totalMoneyObject; // script controlling total money
+    totalMoneyScript totalMoneyScript; // script controlling total money
     [SerializeField] Button businessManagerButton; // button to hire manager
     [SerializeField] GameObject managerBlock; // manager pic, description, and hire button
 
-    [SerializeField] Animator openManagerPanelAnimator;
+    //moved into checkAnimations
+    //[SerializeField] Animator openManagerPanelAnimator;
 
 
     [SerializeField] GameObject variableObject; // business variables that are attached to each businessPrefab
@@ -31,32 +32,29 @@ public class managerScript : MonoBehaviour
 
     [SerializeField] Canvas unlockedCanvas; //used to check if a business is unlocked to before you hire the manaager
 
-    [SerializeField] float unlockAmount; // Amount needed to unlock manager
-
-
+    public float unlockAmount; // Amount needed to unlock manager
 
     private Image buttonImage; // for getting the hire button image for the manager.
 
-
-
-    private bool animationHasPlayed = false;
+    //private bool animationHasPlayed = false;
 
 
     //this runs before start, access the scripts like money and button here
     private void Awake()
     {
         //manually find totalMoneyObject and get script to access variable
-        totalMoneyObject = GameObject.Find("totalMoney").GetComponent<totalMoneyScript>();    //note this gets only the gameobject
+        totalMoneyScript = GameObject.Find("totalMoney").GetComponent<totalMoneyScript>();    //note this gets only the gameobject
         businessVariables = variableObject.GetComponent<businessVariables>();
 
         //get activateButton script for startInfiniteCoroutine function
         activateButtonScript = activateButtonObject.GetComponent<activateButtonScript>();
 
+        //StartCoroutine(checkToPlayAnimation());         //continously check if a manager is unlockable to play an animation and then never play the animation for
+                                                        //that manager again
     }
 
     private void Start()
     {
-
         // Initially disable the manager button
         businessManagerButton.interactable = false;
 
@@ -65,33 +63,17 @@ public class managerScript : MonoBehaviour
 
         // Set the color of the button's image to grey
         buttonImage.color = Color.grey;
-
     }
+
 
 
     private void Update()
     {
-
-        //no need for "isActive" since the automatic loading bar was moved to the prefab and utilizing the loading bar from there
-        if (unlockAmount <= totalMoneyObject.totalMoney && unlockedCanvas.isActiveAndEnabled) //if we have enough money and corresponding business is unlocked
+        //no need for "isActive" since the automatic loading bar was moved to the prefab so when this object is destroyed, and utilizing the loading bar from there
+        if (unlockAmount <= totalMoneyScript.totalMoney && unlockedCanvas.isActiveAndEnabled) //if we have enough money and corresponding business is unlocked
         {
-            businessManagerButton.interactable = true; // make the businessManager button clickable
-
-            //show animation that a business is unlockable once? can change just by removing the if
-            if (animationHasPlayed is false)
-            {
-                animationHasPlayed = true;
-                //play animation
-                if (openManagerPanelAnimator != null)
-                {
-                    openManagerPanelAnimator.SetTrigger("TriggerManagerUnlock");
-                }
-
-                //maybe this code belongs outside the if and should always run if the manager becomes unlockable
-                buttonImage.color = new Color(0.647f, 0.24f, 0.357f);
-            }
-
-            buttonImage.color = new Color(0.647f, 0.24f, 0.357f);
+            businessManagerButton.interactable = true;                        //make the businessManager button clickable
+            buttonImage.color = new Color(0.647f, 0.24f, 0.357f);             //set color to red when purchaseable
 
         }
         else  //we dont have enough money to unlock
@@ -116,6 +98,8 @@ public class managerScript : MonoBehaviour
         //    isManagerUnlocked = true;
         //    businessManagerButton.interactable = true; // make the businessManager button clickable
 
+        //the animations were running in controller so logic was split into there for less coupling
+
         //    // Trigger the unlock notice animation.
         //    // The manager panel button should pulse and the text should change color for a few seconds to alert player that a manager is unlocked. 
         //    if (openManagerPanelAnimator != null)
@@ -131,7 +115,7 @@ public class managerScript : MonoBehaviour
     }
 
 
-    //cant see where ToggleBusinessManager is being used
+    //cant see where ToggleBusinessManager is being used, removing it after current implementation did no effect
     //public void ToggleBusinessManager()
     //{
 
@@ -204,11 +188,11 @@ public class managerScript : MonoBehaviour
     //this is only clickable if the update makes it interactable, so no need to check if we have enough money since update does that
     public void UnlockManager()
     {
-        //Debug.Log("Unlocking manager");
         //call infiniteCoroutine from corresponding business
         activateButtonScript.startInfiniteCoroutine();
+
         // Deduct $unlockAmount from the total money
-        totalMoneyObject.totalMoney -= unlockAmount;
+        totalMoneyScript.totalMoney -= unlockAmount;
 
         // Get the index of the manager prefab in the layout group
         int index = managerBlock.transform.GetSiblingIndex();
