@@ -25,14 +25,10 @@ public class unlockedCanvasOnEnable : MonoBehaviour
     //"OnEnable" is activated when a GAMEOBJECT is ".setActive(true)";
     void OnEnable()
     {
-        Debug.Log("PrintOnEnable: script was enabled");
-
         upgradeCostText.text = businessVariables.upgradeCost.ToString() + "$"; //update upgrade cost text to new cost
         levelText.text = businessVariables.level.ToString();
 
         countdownText.text = Mathf.Ceil(businessVariables.secondsToFinish).ToString() + "s";
         moneyGivenText.text = "$" + businessVariables.baseProfit * businessVariables.profitMultiplerUpgrade;
-
-
     }
 }
