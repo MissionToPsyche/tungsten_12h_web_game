@@ -15,7 +15,7 @@ public class updateController : MonoBehaviour
 
     //private bool playerAcknowledged = false;
 
-    public float costUpgrade1;
+    private float costUpgrade1;
     private float costUpgrade2;
     private float costUpgrade3;
     private float costUpgrade4;
