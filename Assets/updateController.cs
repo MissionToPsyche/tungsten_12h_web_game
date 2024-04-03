@@ -13,10 +13,9 @@ public class updateController : MonoBehaviour
     [SerializeField] GameObject Upgrade7;
     [SerializeField] GameObject Upgrade8;
 
-    private bool upgradeUnlocked = false;
-    private bool playerAcknowledged = false;
+    //private bool playerAcknowledged = false;
 
-    private float costUpgrade1;
+    public float costUpgrade1;
     private float costUpgrade2;
     private float costUpgrade3;
     private float costUpgrade4;
@@ -51,6 +50,7 @@ public class updateController : MonoBehaviour
     private float[] upgrade6 = new float[3];
     private float[] upgrade7 = new float[3];
     private float[] upgrade8 = new float[3];
+
 
     [SerializeField] Animator buttonAnimator;
     totalMoneyScript totalMoneyObject;
@@ -110,130 +110,145 @@ public class updateController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(true)
+
+            //animation1 has played = false
+            if (!upgradeBool1 && totalMoneyObject.totalMoney >= costUpgrade1)
+            {
+                upgradeBool1 = true;                //lock this if and only enable when you click the corresponding upgradePrefab
+
+                if (buttonAnimator != null)
+                {
+                    buttonAnimator.SetTrigger("TriggerManagerUnlock");
+                }
+
+            }
+        if (!upgradeBool2 && totalMoneyObject.totalMoney >= costUpgrade2)
         {
-            if (!upgradeUnlocked && totalMoneyObject.totalMoney >= costUpgrade1)
-            {
-                updateCost1();
-                if (buttonAnimator != null)
-                {
-                    buttonAnimator.SetTrigger("TriggerManagerUnlock");
-                }
-                upgradeBool1 = costUpgrade1 == -1;
+            upgradeBool2 = true;                //lock this if and only enable when you click the corresponding upgradePrefab
 
-            }
-            if (!upgradeUnlocked && totalMoneyObject.totalMoney >= costUpgrade2)
+            if (buttonAnimator != null)
             {
-                updateCost2();
-                if (buttonAnimator != null)
-                {
-                    buttonAnimator.SetTrigger("TriggerManagerUnlock");
-                }
-                upgradeBool2 = costUpgrade2 == -1;
+                buttonAnimator.SetTrigger("TriggerManagerUnlock");
             }
-            if (!upgradeUnlocked && totalMoneyObject.totalMoney >= costUpgrade3)
-            {
-                updateCost3();
-                if (buttonAnimator != null)
-                {
-                    buttonAnimator.SetTrigger("TriggerManagerUnlock");
-                }
-                upgradeBool3 = costUpgrade3 == -1;
-            }
-            if (!upgradeUnlocked && totalMoneyObject.totalMoney >= costUpgrade4)
-            {
-                updateCost4();
-                if (buttonAnimator != null)
-                {
-                    buttonAnimator.SetTrigger("TriggerManagerUnlock");
-                }
-                upgradeBool4 = costUpgrade4 == -1;
-            }
-            if (!upgradeUnlocked && totalMoneyObject.totalMoney >= costUpgrade5)
-            {
-                updateCost5();
-                if (buttonAnimator != null)
-                {
-                    buttonAnimator.SetTrigger("TriggerManagerUnlock");
-                }
-                upgradeBool5 = costUpgrade5 == -1;
-            }
-            if (!upgradeUnlocked && totalMoneyObject.totalMoney >= costUpgrade6)
-            {
-                updateCost6();
-                if (buttonAnimator != null)
-                {
-                    buttonAnimator.SetTrigger("TriggerManagerUnlock");
-                }
-                upgradeBool6 = costUpgrade6 == -1;
-            }
-            if (!upgradeUnlocked && totalMoneyObject.totalMoney >= costUpgrade7)
-            {
-                updateCost7();
-                if (buttonAnimator != null)
-                {
-                    buttonAnimator.SetTrigger("TriggerManagerUnlock");
-                }
-                upgradeBool7 = costUpgrade7 == -1;
-            }
-            if (!upgradeUnlocked && totalMoneyObject.totalMoney >= costUpgrade8)
-            {
-                updateCost8();
-                if (buttonAnimator != null)
-                {
-                    buttonAnimator.SetTrigger("TriggerManagerUnlock");
-                }
-                upgradeBool8 = costUpgrade8 == -1;
-            }
+
         }
-      
+        if (!upgradeBool3 && totalMoneyObject.totalMoney >= costUpgrade3)
+        {
+            upgradeBool3 = true;                //lock this if and only enable when you click the corresponding upgradePrefab
+
+            if (buttonAnimator != null)
+            {
+                buttonAnimator.SetTrigger("TriggerManagerUnlock");
+            }
+
+        }
+        if (!upgradeBool4 && totalMoneyObject.totalMoney >= costUpgrade4)
+        {
+            upgradeBool4 = true;                //lock this if and only enable when you click the corresponding upgradePrefab
+
+            if (buttonAnimator != null)
+            {
+                buttonAnimator.SetTrigger("TriggerManagerUnlock");
+            }
+
+        }
+        if (!upgradeBool5 && totalMoneyObject.totalMoney >= costUpgrade5)
+        {
+            upgradeBool5 = true;                //lock this if and only enable when you click the corresponding upgradePrefab
+
+            if (buttonAnimator != null)
+            {
+                buttonAnimator.SetTrigger("TriggerManagerUnlock");
+            }
+
+        }
+        if (!upgradeBool6 && totalMoneyObject.totalMoney >= costUpgrade6)
+        {
+            upgradeBool6 = true;                //lock this if and only enable when you click the corresponding upgradePrefab
+
+            if (buttonAnimator != null)
+            {
+                buttonAnimator.SetTrigger("TriggerManagerUnlock");
+            }
+
+        }
+        if (!upgradeBool7 && totalMoneyObject.totalMoney >= costUpgrade7)
+        {
+            upgradeBool7 = true;                //lock this if and only enable when you click the corresponding upgradePrefab
+
+            if (buttonAnimator != null)
+            {
+                buttonAnimator.SetTrigger("TriggerManagerUnlock");
+            }
+
+        }
+        if (!upgradeBool8 && totalMoneyObject.totalMoney >= costUpgrade8)
+        {
+            upgradeBool8 = true;                //lock this if and only enable when you click the corresponding upgradePrefab
+
+            if (buttonAnimator != null)
+            {
+                buttonAnimator.SetTrigger("TriggerManagerUnlock");
+            }
+
+        }
+
+
     }
 
-    private void updateCost1()
+    public void updateCost1() //on button click
     {
-        Debug.Log("Updating cost 1 : " + upgradePrefab1.upgradeTime);
-        costUpgrade1 = upgradePrefab1.upgradeTime < 3 ? upgrade1[upgradePrefab1.upgradeTime - 1] : -1;
+        costUpgrade1 = upgradePrefab1.upgradeTime <= 3 ? upgrade1[upgradePrefab1.upgradeTime - 1] : -1;
+        upgradeBool1 = upgradePrefab1.upgradeTime <= 3 ? false : true;
     }
 
-    private void updateCost2()
+    public void updateCost2()
     {
-        costUpgrade2 = upgradePrefab2.upgradeTime < 3 ? upgrade2[upgradePrefab2.upgradeTime - 1] : -1;
+        costUpgrade2 = upgradePrefab2.upgradeTime <= 3 ? upgrade2[upgradePrefab2.upgradeTime - 1] : -1;
+        upgradeBool2 = false;
+
     }
 
-    private void updateCost3()
+    public void updateCost3()
     {
-        costUpgrade3 = upgradePrefab3.upgradeTime < 3 ? upgrade3[upgradePrefab3.upgradeTime - 1] : -1;
+        costUpgrade3 = upgradePrefab3.upgradeTime <= 3 ? upgrade3[upgradePrefab3.upgradeTime - 1] : -1;
+        upgradeBool3 = false;
+
     }
 
-    private void updateCost4()
+    public void updateCost4()
     {
-        costUpgrade4 = upgradePrefab4.upgradeTime < 3 ? upgrade4[upgradePrefab4.upgradeTime - 1] : -1;
+        costUpgrade4 = upgradePrefab4.upgradeTime <= 3 ? upgrade4[upgradePrefab4.upgradeTime - 1] : -1;
+        upgradeBool4 = false;
+
     }
 
-    private void updateCost5()
+    public void updateCost5()
     {
-        costUpgrade5 = upgradePrefab5.upgradeTime < 3 ? upgrade5[upgradePrefab5.upgradeTime - 1] : -1;
+        costUpgrade5 = upgradePrefab5.upgradeTime <= 3 ? upgrade5[upgradePrefab5.upgradeTime - 1] : -1;
+        upgradeBool5 = false;
+
     }
 
-    private void updateCost6()
+    public void updateCost6()
     {
-        costUpgrade6 = upgradePrefab6.upgradeTime < 3 ? upgrade6[upgradePrefab6.upgradeTime - 1] : -1;
+        costUpgrade6 = upgradePrefab6.upgradeTime <= 3 ? upgrade6[upgradePrefab6.upgradeTime - 1] : -1;
+        upgradeBool6 = false;
+
     }
 
-    private void updateCost7()
+    public void updateCost7()
     {
-        costUpgrade7 = upgradePrefab7.upgradeTime < 3 ? upgrade7[upgradePrefab7.upgradeTime - 1] : -1;
+        costUpgrade7 = upgradePrefab7.upgradeTime <= 3 ? upgrade7[upgradePrefab7.upgradeTime - 1] : -1;
+        upgradeBool7 = false;
+
     }
 
-    private void updateCost8()
+    public void updateCost8()
     {
-        costUpgrade8 = upgradePrefab8.upgradeTime < 3 ? upgrade8[upgradePrefab8.upgradeTime - 1] : -1;
+        costUpgrade8 = upgradePrefab8.upgradeTime <= 3 ? upgrade8[upgradePrefab8.upgradeTime - 1] : -1;
+        upgradeBool8 = false;
+
     }
 
-
-    public void OnPlayerAcknowledged()
-    {
-        playerAcknowledged = !playerAcknowledged;
-        upgradeUnlocked = false;
-    }
 }
