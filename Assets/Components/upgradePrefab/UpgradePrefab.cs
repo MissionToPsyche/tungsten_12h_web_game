@@ -11,18 +11,19 @@ public class UpgradePrefab : MonoBehaviour
     [SerializeField] TextMeshProUGUI ButtonText;
     [SerializeField] Button buttonGameObject;
     [SerializeField] GameObject unlockedCanvas;
-    [SerializeField] float costUp1;
-    [SerializeField] float costUp2;
-    [SerializeField] float costUp3;
+    public float costUp1;
+    public float costUp2;
+    public float costUp3;
+    [SerializeField] Animator openManagerPanelAnimator;
     businessVariables businessVariable;
     totalMoneyScript totalMoneyObject;
-    private int upgradeTime;
-    private bool upgradeUnlocked = false;
+    public int upgradeTime = 1;
+
     private void Awake()
     {
         businessVariable = varibleObject.GetComponent<businessVariables>();
         totalMoneyObject = GameObject.Find("totalMoney").GetComponent<totalMoneyScript>();
-        upgradeTime = 1;
+        Debug.Log("UpgradePrefab Awake : " + upgradeTime);
     }
 
     public void updateMultiplier()
@@ -58,6 +59,7 @@ public class UpgradePrefab : MonoBehaviour
 
     void Update()
     {
+        
         if (unlockedCanvas.activeSelf)
         {
             switch (upgradeTime)
