@@ -8,7 +8,7 @@ public class businessVariables : MonoBehaviour
 
     //this script is attached to an empty gameobject to simply store all variables of each business object
 
-    public float unlockCost = 0;                    //still have to click at 0 to unlock                    
+    public double unlockCost = 0;                    //still have to click at 0 to unlock                    
 
     public float secondsToFinish = 1.00f;     //variable dependent on business
     public float baseProfit = 1.00f;

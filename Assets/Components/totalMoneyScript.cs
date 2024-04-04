@@ -38,7 +38,7 @@ public class totalMoneyScript : MonoBehaviour
 
 
 
-    static (string, string) FormatMoney(double money)  //takes in double, return string, string
+    public static (string, string) FormatMoney(double money)  //takes in double, return string, string
     {
         if (Math.Abs(money) >= 1E15)
         {
