@@ -9318,7 +9318,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1933709948154282085, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: businessName
-      value: iron
+      value: Tungsten
       objectReference: {fileID: 0}
     - target: {fileID: 1933709948154282085, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: secondsToFinish
@@ -9390,7 +9390,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: dialogue.sentences.Array.size
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
@@ -9408,11 +9408,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: dialogue.sentences.Array.data[3]
-      value: 
+      value: I still can't believe it was discovered back in 1852.
       objectReference: {fileID: 0}
     - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: dialogue.sentences.Array.data[4]
-      value: asdgr
+      value: Anyway, we need to uncover the classified information by creating money.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: dialogue.sentences.Array.data[5]
+      value: Unlock the first business and interact with it to earn more money..
       objectReference: {fileID: 0}
     - target: {fileID: 4715354385121623202, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: m_IsActive
