@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 
@@ -21,6 +22,8 @@ public class unlockButtonScript : MonoBehaviour
     [SerializeField] Button unlockButton;           //button used to make interactable/uninteractable depending on current money
 
     private dialogueTrigger dialogueTrigger;        //since dialogueTrigger a monoscript we attach and can get component
+
+    [SerializeField] TextMeshProUGUI businessNameText;
 
     //SAY I WANT TO ACCESS AN OBJECT THAT IS OUTSIDE THE HIERARCHY LIKE THIS
     //DO I JUST SIMPLY FIND IT??
@@ -52,7 +55,8 @@ public class unlockButtonScript : MonoBehaviour
         {
             if (unlockableDialogueShown == false)
             {
-                unlockableDialogueShown=true;
+                businessNameText.text = businessVariables.businessName; //will show classified and display name when unlocked
+                unlockableDialogueShown = true;
                 dialogueTrigger.triggerDialogue();
             }
             unlockButton.interactable = true;

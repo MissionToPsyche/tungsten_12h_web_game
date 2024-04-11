@@ -21,8 +21,7 @@ public class totalMoneyScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //get text component
-        totalMoneyText = transform.Find("Canvas/totalMoneyText").GetComponent<TextMeshProUGUI>();
+
     }
 
     // Update is called once per frame

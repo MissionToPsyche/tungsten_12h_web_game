@@ -11,7 +11,7 @@ public class unlockCanvasScript : MonoBehaviour
     totalMoneyScript totalMoneyScript;
 
 
-    [SerializeField] TextMeshProUGUI businessNameText;
+    //[SerializeField] TextMeshProUGUI businessNameText;
     [SerializeField] TextMeshProUGUI unlockCostText;
 
     void Awake()
@@ -23,7 +23,7 @@ public class unlockCanvasScript : MonoBehaviour
 
         var (formattedMoney, numericalPrefix) = totalMoneyScript.FormatMoney(businessVariables.unlockCost);
 
-        businessNameText.text = businessVariables.businessName;
+        //businessNameText.text = businessVariables.businessName; //will show classified and display name when unlocked
         unlockCostText.text = formattedMoney + " " + numericalPrefix + "$"; //update upgrade cost text to new cost
     }
 }
