@@ -23,7 +23,6 @@ public class UpgradePrefab : MonoBehaviour
     {
         businessVariable = varibleObject.GetComponent<businessVariables>();
         totalMoneyObject = GameObject.Find("totalMoney").GetComponent<totalMoneyScript>();
-        Debug.Log("UpgradePrefab Awake : " + upgradeTime);
     }
 
     public void updateMultiplier()
@@ -39,12 +38,12 @@ public class UpgradePrefab : MonoBehaviour
         {
             case 1:
                 totalMoneyObject.totalMoney -= costUp1;
-                ButtonText.text = "Upgrade x3, This will cost: " + businessVariable.upgradeCost;
+                ButtonText.text = "Upgrade x3, This will cost: " + costUp1;
                 businessVariable.profitMultiplerUpgrade *= 2; // First upgrade to x2
                 break;
             case 2:
                 totalMoneyObject.totalMoney -= costUp2;
-                ButtonText.text = "Upgrade x5, This will cost: " + businessVariable.upgradeCost;
+                ButtonText.text = "Upgrade x5, This will cost: " + costUp2;
                 businessVariable.profitMultiplerUpgrade *= 3; // Second upgrade to x3
                 break;
             case 3:
