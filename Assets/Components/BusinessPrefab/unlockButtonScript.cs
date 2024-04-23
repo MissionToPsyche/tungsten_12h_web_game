@@ -30,7 +30,7 @@ public class unlockButtonScript : MonoBehaviour
     totalMoneyScript totalMoneyObject;
 
 
-    bool unlockableDialogueShown = false;
+    //bool unlockableDialogueShown = false;
 
     private void Awake()
     {
@@ -43,6 +43,7 @@ public class unlockButtonScript : MonoBehaviour
 
     public void unlockBusiness()
     {
+        dialogueTrigger.triggerDialogue();       //display dialogue AFTER unlocking the business
         unlockCanvas.SetActive(false);          //hide the canvas to unlock
         unlockedCanvas.SetActive(true);         //display canvas to interact with business object
     }
@@ -53,16 +54,12 @@ public class unlockButtonScript : MonoBehaviour
         //allow clickable button if their is enough money
         if (businessVariables.unlockCost <= totalMoneyObject.totalMoney)
         {
-            if (unlockableDialogueShown == false)
-            {
-                businessNameText.text = businessVariables.businessName; //will show classified and display name when unlocked
-                unlockableDialogueShown = true;
-                dialogueTrigger.triggerDialogue();
-            }
+            businessNameText.text = businessVariables.businessName; //will show businesses' name when purchaseable            
             unlockButton.interactable = true;
 
         } else
         {
+            businessNameText.text = "CLASSIFIED"; //will show classified when not purchaseable
             unlockButton.interactable = false;
         }
     }
