@@ -76,12 +76,7 @@ public class activateButtonScript : MonoBehaviour
             // Increment the elapsed time
             elapsedTime += Time.deltaTime;
 
-            countdownText.text = Mathf.Ceil(businessVariables.secondsToFinish - elapsedTime).ToString() + "s";
-
-            moneyGivenText.text = "$" + businessVariables.baseProfit * businessVariables.profitMultiplerUpgrade;
-
-
-
+            countdownText.text = Mathf.Floor(businessVariables.secondsToFinish - elapsedTime).ToString() + "s";
 
             // Wait for the next frame
             yield return null;

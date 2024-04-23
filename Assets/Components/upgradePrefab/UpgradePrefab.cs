@@ -34,7 +34,7 @@ public class UpgradePrefab : MonoBehaviour
         totalMoneyObject = GameObject.Find("totalMoney").GetComponent<totalMoneyScript>();
         ButtonText.text = "Upgrade Cost: " + costUp1;
         updateLabel.GetComponent<TextMeshProUGUI>().text = updateName1;
-        businessMultiplierLabel.GetComponent<TextMeshProUGUI>().text = "Profit Multiplier: x2";
+        businessMultiplierLabel.GetComponent<TextMeshProUGUI>().text =  businessVariable.businessName + " Profit x2";
         businessDescriptonLabel.GetComponent<TextMeshProUGUI>().text = description1;
     }
 
@@ -54,7 +54,7 @@ public class UpgradePrefab : MonoBehaviour
                 ButtonText.text = "Upgrade Cost: " + costUp2;
                 businessVariable.profitMultiplerUpgrade *= 2; // First upgrade to x2
                 updateLabel.GetComponent<TextMeshProUGUI>().text = updateName2;
-                businessMultiplierLabel.GetComponent<TextMeshProUGUI>().text = "Profit Multiplier: x3";
+                businessMultiplierLabel.GetComponent<TextMeshProUGUI>().text = businessVariable.businessName + " Profit x3";
                 businessDescriptonLabel.GetComponent<TextMeshProUGUI>().text = description2;
                 break;
             case 2:
@@ -62,15 +62,16 @@ public class UpgradePrefab : MonoBehaviour
                 ButtonText.text = "Upgrade Cost: " + costUp3;
                 businessVariable.profitMultiplerUpgrade *= 3; // Second upgrade to x3
                 updateLabel.GetComponent<TextMeshProUGUI>().text = updateName3;
-                businessMultiplierLabel.GetComponent<TextMeshProUGUI>().text = "Profit Multiplier: x5";
+                businessMultiplierLabel.GetComponent<TextMeshProUGUI>().text = businessVariable.businessName + " Profit x5";
                 businessDescriptonLabel.GetComponent<TextMeshProUGUI>().text = description3;
                 break;
             case 3:
                 totalMoneyObject.totalMoney -= costUp3;
-                ButtonText.text = "Maxed x5";
+                ButtonText.text = "MAXED";
                 businessVariable.profitMultiplerUpgrade *= 5; // Third upgrade to x5
-                updateLabel.GetComponent<TextMeshProUGUI>().text = updateName3;
-                businessMultiplierLabel.GetComponent<TextMeshProUGUI>().text = "Profit Multiplier: x5 is Maxed";
+                updateLabel.GetComponent<TextMeshProUGUI>().text = "Fully Upgraded";
+                businessMultiplierLabel.GetComponent<TextMeshProUGUI>().text = "Profit Multiplier: is MAXED at x30";
+                businessDescriptonLabel.GetComponent<TextMeshProUGUI>().text = "This business has been fully upgraded";
                 break;
         }
 

@@ -930,7 +930,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1933709948154282085, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: businessName
-      value: Zinc
+      value: Solar Dynamics Systems
       objectReference: {fileID: 0}
     - target: {fileID: 1933709948154282085, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: secondsToFinish
@@ -2746,7 +2746,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1933709948154282085, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: businessName
-      value: Gold
+      value: DSOC Innovations
       objectReference: {fileID: 0}
     - target: {fileID: 1933709948154282085, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: secondsToFinish
@@ -4226,7 +4226,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1933709948154282085, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: businessName
-      value: Cobalt
+      value: SpectraVision Insights
       objectReference: {fileID: 0}
     - target: {fileID: 1933709948154282085, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: secondsToFinish
@@ -5674,7 +5674,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1933709948154282085, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: businessName
-      value: Platinum
+      value: Gamma-Neutron Probe
       objectReference: {fileID: 0}
     - target: {fileID: 1933709948154282085, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: secondsToFinish
@@ -5870,7 +5870,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1933709948154282085, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: businessName
-      value: Copper
+      value: Solar Electric Propulsion Solutions
       objectReference: {fileID: 0}
     - target: {fileID: 1933709948154282085, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: secondsToFinish
@@ -8562,27 +8562,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: updateName1
-      value: Update 1
+      value: Psyche Analytics Software
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: updateName2
-      value: Update 2
+      value: Exploration Simulation Suite
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: updateName3
-      value: Update 3
+      value: Research Collaboration Network
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: description1
-      value: This is the first descp
+      value: Develop software for analyzing Psyche mission data, enhancing research
+        insights.
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: description2
-      value: This is the Second descp
+      value: Create a simulation platform for Psyche exploration, aiding mission
+        planning.
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: description3
-      value: This is the Third descp
+      value: Establish an online platform for Psyche research collaboration, accelerating
+        discoveries.
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: varibleObject
@@ -9090,7 +9093,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1933709948154282085, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: businessName
-      value: Tungsten
+      value: Cosmic Discovery Enterprises
       objectReference: {fileID: 0}
     - target: {fileID: 1933709948154282085, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: secondsToFinish
@@ -9405,7 +9408,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1933709948154282085, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: businessName
-      value: Silver
+      value: Magnetometry Insights
       objectReference: {fileID: 0}
     - target: {fileID: 1933709948154282085, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: secondsToFinish
@@ -11088,7 +11091,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1933709948154282085, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: businessName
-      value: tungsten
+      value: Cosmic Origins Research Institute
       objectReference: {fileID: 0}
     - target: {fileID: 1933709948154282085, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: secondsToFinish

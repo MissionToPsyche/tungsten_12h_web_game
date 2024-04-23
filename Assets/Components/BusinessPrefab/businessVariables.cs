@@ -14,7 +14,7 @@ public class businessVariables : MonoBehaviour
     public float baseProfit = 1.00f;
 
 
-    public float upgradeCost = 1.00f; //cost to upgrade (should be modifed after every level)
+    public double upgradeCost = 1.00; //cost to upgrade (should be modifed after every level)
     public float upgradeCostScale = 1.07f; //(increase 1/5 each level) //how much the cost of upgrade should increase per level
     public float profitIncreasePerLevel = 1.00f;           //each level will increase profit of business by this amount (linear)
 

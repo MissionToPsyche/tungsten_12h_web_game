@@ -32,13 +32,6 @@ public class upgradeButtonScript : MonoBehaviour
 
     public void upgradeBusinessOnClick()
     {
-        //we retrieve variables we use from object //we need to modify the variables directly so we cant simply retrive the ones we need
-        //int level = businessVariables.level;
-        //float baseProfit = businessVariables.baseProfit;
-        //float profitIncreasePerLevel = businessVariables.profitIncreasePerLevel;
-        //float upgradeCost = businessVariables.upgradeCost;
-        //float upgradeCostScale = businessVariables.upgradeCostScale;
-
         //Increase level and update text
         businessVariables.level++;
         levelText.text = businessVariables.level.ToString();
@@ -51,6 +44,7 @@ public class upgradeButtonScript : MonoBehaviour
 
 
         //Update total money by subtracting upgrade cost (rounded after calculation)
+
         totalMoneyObject.totalMoney -= businessVariables.upgradeCost;   //SUBTRACT MONEY BEFORE YOU MODIFY UPGRADE COST BELOW     
         totalMoneyObject.totalMoney = (float)Math.Floor(totalMoneyObject.totalMoney * 100) / 100;
         //this above simply rounds the value we got to 2 decimal places
@@ -60,10 +54,20 @@ public class upgradeButtonScript : MonoBehaviour
         businessVariables.upgradeCost *= businessVariables.upgradeCostScale;            //this increased the upgradeCost
         businessVariables.upgradeCost = (float)Math.Floor(businessVariables.upgradeCost * 100) / 100;  //this simply rounds the value we got to 2 decimal places
 
-        upgradeCostText.text = businessVariables.upgradeCost.ToString() + "$"; //update upgrade cost text to new cost
+        updateUpgradeCostText();
+        updateMoneyGivenText();
 
-        moneyGivenText.text = "$" + businessVariables.baseProfit * businessVariables.profitMultiplerUpgrade;
+    }
+    public void updateUpgradeCostText()
+    {
+        var (formattedValue, numericalPrefix) = totalMoneyObject.FormatMoney(businessVariables.upgradeCost); //format money before displaying
+        upgradeCostText.text = formattedValue + " " + numericalPrefix + "$"; //update upgrade cost text to new cost
+    }
 
+    public void updateMoneyGivenText() 
+    {
+        var (formattedValue, numericalPrefix) = totalMoneyObject.FormatMoney(businessVariables.baseProfit * businessVariables.profitMultiplerUpgrade); //format money before displaying
+        moneyGivenText.text = "$" + formattedValue + " " + numericalPrefix;
     }
 
     public void milestoneUpgrade()
