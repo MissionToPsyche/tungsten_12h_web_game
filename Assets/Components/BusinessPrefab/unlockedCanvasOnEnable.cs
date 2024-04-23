@@ -15,6 +15,7 @@ public class unlockedCanvasOnEnable : MonoBehaviour
 
     [SerializeField] TextMeshProUGUI countdownText;
     [SerializeField] TextMeshProUGUI moneyGivenText;
+    [SerializeField] TextMeshProUGUI businessNameText;
 
     totalMoneyScript totalMoneyObject;
 
@@ -34,10 +35,16 @@ public class unlockedCanvasOnEnable : MonoBehaviour
         upgradeCostText.text = formattedValue + " " + numericalPrefix + "$"; //update upgrade cost text to new cost
 
         levelText.text = businessVariables.level.ToString();
-        countdownText.text = Mathf.Ceil(businessVariables.secondsToFinish).ToString() + "s";
 
+        int totalSeconds = Mathf.FloorToInt(businessVariables.secondsToFinish);
+        int minutes = totalSeconds / 60;
+        int seconds = totalSeconds % 60;
+        string formattedTime = string.Format("{0:00}:{1:00}", minutes, seconds);
+        countdownText.text = formattedTime;
 
         (formattedValue, numericalPrefix) = totalMoneyObject.FormatMoney(businessVariables.baseProfit * businessVariables.profitMultiplerUpgrade); //format money before displaying
         moneyGivenText.text = "$" + formattedValue + " " + numericalPrefix;
+
+        businessNameText.text = businessVariables.businessName;
     }
 }

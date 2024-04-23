@@ -18,6 +18,8 @@ public class upgradeButtonScript : MonoBehaviour
     [SerializeField] TextMeshProUGUI upgradeCostText;
     [SerializeField] TextMeshProUGUI levelText;
     [SerializeField] TextMeshProUGUI moneyGivenText;
+    [SerializeField] TextMeshProUGUI countdownText;
+
 
 
     totalMoneyScript totalMoneyObject;
@@ -84,6 +86,11 @@ public class upgradeButtonScript : MonoBehaviour
             )
         {
             businessVariables.secondsToFinish /= 2;
+            int totalSeconds = Mathf.FloorToInt(businessVariables.secondsToFinish);
+            int minutes = totalSeconds / 60;
+            int seconds = totalSeconds % 60;
+            string formattedTime = string.Format("{0:00}:{1:00}", minutes, seconds);
+            countdownText.text = formattedTime;
         }
     }
 

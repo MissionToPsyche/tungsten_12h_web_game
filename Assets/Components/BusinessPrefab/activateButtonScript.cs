@@ -65,6 +65,7 @@ public class activateButtonScript : MonoBehaviour
 
         float elapsedTime = 0f;
 
+
         while (elapsedTime < businessVariables.secondsToFinish)
         {
             // Interpolate the value from 0 to 1 based on the elapsed time
@@ -76,14 +77,13 @@ public class activateButtonScript : MonoBehaviour
             // Increment the elapsed time
             elapsedTime += Time.deltaTime;
 
-            countdownText.text = Mathf.Floor(businessVariables.secondsToFinish - elapsedTime).ToString() + "s";
+            formatCountdown(businessVariables.secondsToFinish - elapsedTime);
 
             // Wait for the next frame
             yield return null;
         }
 
-        countdownText.text = Mathf.Ceil(businessVariables.secondsToFinish).ToString() + "s";
-
+        formatCountdown(businessVariables.secondsToFinish);
 
         loadingBar.value = 0f;                  //reset the loading bar
         activateButton.interactable = true;     //make button clickable again
@@ -95,6 +95,15 @@ public class activateButtonScript : MonoBehaviour
         coroutineRunning = false; // release mutex
 
         yield break;                            // End the coroutine
+    }
+
+    public void formatCountdown(float secondsToFinish) //this formats and sets text Object to time
+    {
+        int totalSeconds = Mathf.FloorToInt(secondsToFinish);
+        int minutes = totalSeconds / 60;
+        int seconds = totalSeconds % 60;
+        string formattedTime = string.Format("{0:00}:{1:00}", minutes, seconds);
+        countdownText.text = formattedTime;
     }
 
 
