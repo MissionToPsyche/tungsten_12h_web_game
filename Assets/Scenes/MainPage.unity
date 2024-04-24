@@ -508,27 +508,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: updateName1
-      value: U1
+      value: Multispectral Imager Enhancement
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: updateName2
-      value: U2
+      value: Advanced Spectral Analysis Algorithms
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: updateName3
-      value: U3
+      value: High-Resolution Imaging Capability
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: description1
-      value: This is D1
+      value: Enhance imaging precision for deeper insights into Psyche's features
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: description2
-      value: This is D2
+      value: Develop advanced algorithms for detailed composition analysis
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: description3
-      value: This is D3
+      value: Improve imaging resolution for clearer views of Psyche's terrain
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: varibleObject
@@ -1263,27 +1263,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: updateName1
-      value: U1
+      value: Laser Comm System Upgrade
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: updateName2
-      value: U2
+      value: Optical Network Expansion
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: updateName3
-      value: U3
+      value: Interplanetary Data Acceleration
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: description1
-      value: This is D1
+      value: Enhance laser communication system for faster and more reliable data
+        transmission
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: description2
-      value: This is D2
+      value: Expand optical network infrastructure for increased data traffic capacity
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: description3
-      value: This is D3
+      value: Develop techniques for faster interplanetary data transmission, improving
+        real-time communication
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: varibleObject
@@ -1992,27 +1994,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: updateName1
-      value: U1
+      value: Sensitivity Enhancement
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: updateName2
-      value: U2
+      value: Mapping Efficiency
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: updateName3
-      value: U3
+      value: Data Processing Acceleration
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: description1
-      value: This is D1
+      value: Improve spectrometer sensitivity for more precise element detection
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: description2
-      value: This is D2
+      value: Streamline elemental mapping processes to expedite data collection
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: description3
-      value: This is D3
+      value: Develop faster algorithms to speed up real-time analysis of gamma-ray
+        and neutron data
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: varibleObject
@@ -4040,27 +4043,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: updateName1
-      value: U1
+      value: Solar Efficiency Boost
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: updateName2
-      value: U2
+      value: Sun-Tracking Enhancement
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: updateName3
-      value: U3
+      value: Energy Storage Expansion
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: description1
-      value: This is D1
+      value: Increase solar array efficiency for maximum power generation
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: description2
-      value: This is D2
+      value: Improve system to maintain optimal solar array orientation
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: description3
-      value: This is D3
+      value: Expand capacity to store excess solar energy for continuous power supply
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: varibleObject
@@ -6423,27 +6426,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: updateName1
-      value: U1
+      value: Cosmic Data Fusion
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: updateName2
-      value: U2
+      value: Deep Space Analytics
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: updateName3
-      value: U3
+      value: Galactic Collaboration Network
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: description1
-      value: This is D1
+      value: Integrate and analyze vast cosmic datasets seamlessly, accelerating
+        research insights
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: description2
-      value: This is D2
+      value: Employ advanced algorithms to uncover hidden patterns in deep space
+        data, enhancing cosmic understanding
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: description3
-      value: This is D3
+      value: Connect researchers galaxy-wide for collaborative knowledge exchange,
+        fostering scientific advancement
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: varibleObject
@@ -7041,27 +7047,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: updateName1
-      value: U1
+      value: Magnetometer Sensitivity Boost
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: updateName2
-      value: U2
+      value: Noise Reduction Tech
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: updateName3
-      value: U3
+      value: Data Processing Optimization
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: description1
-      value: This is D1
+      value: Increase sensitivity for more precise magnetic field measurements
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: description2
-      value: This is D2
+      value: Implement technology to minimize interference in magnetometer readings
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: description3
-      value: This is D3
+      value: Improve algorithms for faster and more efficient analysis of magnetometer
+        data
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: varibleObject
@@ -7889,27 +7896,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: updateName1
-      value: U1
+      value: Photon Thruster Upgrade
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: updateName2
-      value: U2
+      value: Solar Array Optimization
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: updateName3
-      value: U3
+      value: Ion Propellant Enhancement
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: description1
-      value: This is D1
+      value: Improve efficiency and performance of photon thrusters for enhanced
+        spacecraft propulsion
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: description2
-      value: This is D2
+      value: Enhance solar array efficiency to maximize power generation for propulsion
+        and systems
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: description3
-      value: This is D3
+      value: Refine ion propellant for improved thruster efficiency and reliability
+        in solar electric propulsion systems
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: varibleObject
