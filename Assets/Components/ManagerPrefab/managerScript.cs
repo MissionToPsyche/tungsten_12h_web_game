@@ -22,6 +22,12 @@ public class managerScript : MonoBehaviour
     public float unlockAmount; // Amount needed to unlock manager
 
     private Image buttonImage; // for getting the hire button image for the manager.
+    [SerializeField] TextMeshProUGUI managerNameText;
+    [SerializeField] TextMeshProUGUI unlockCostText;
+    [SerializeField] TextMeshProUGUI runXBusinessText;
+
+    [SerializeField] string managerName = "default";
+
 
 
 
@@ -35,8 +41,16 @@ public class managerScript : MonoBehaviour
         //get activateButton script for startInfiniteCoroutine function
         activateButtonScript = activateButtonObject.GetComponent<activateButtonScript>();
 
-        //StartCoroutine(checkToPlayAnimation());         //continously check if a manager is unlockable to play an animation and then never play the animation for
-                                                        //that manager again
+        //update UI of prefab
+
+        //set manager name
+        managerNameText.text = managerName;
+
+        //set "runs [businessName]"
+        runXBusinessText.text = "Runs " + businessVariables.businessName;
+
+        //set cost to unlock
+        unlockCostText.text = "Costs " + unlockAmount.ToString();
     }
 
     private void Start()
@@ -79,6 +93,7 @@ public class managerScript : MonoBehaviour
     //this is only clickable if the update makes it interactable, so no need to check if we have enough money since update does that
     public void UnlockManager()
     {
+        Debug.Log("unlocked manager");
         //call infiniteCoroutine from corresponding business
         activateButtonScript.startInfiniteCoroutine();
 
