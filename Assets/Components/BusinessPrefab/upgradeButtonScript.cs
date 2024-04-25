@@ -86,6 +86,8 @@ public class upgradeButtonScript : MonoBehaviour
             )
         {
             businessVariables.secondsToFinish /= 2;
+
+            //change reduce timer text by half
             int totalSeconds = Mathf.FloorToInt(businessVariables.secondsToFinish);
             int minutes = totalSeconds / 60;
             int seconds = totalSeconds % 60;

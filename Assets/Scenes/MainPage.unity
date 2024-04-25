@@ -923,6 +923,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7681470188512744368, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
   m_PrefabInstance: {fileID: 1145836139}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &91030967 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
+  m_PrefabInstance: {fileID: 1145836139}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91030965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d326e0abe5f22164b87b80a9122462b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &97292305 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3294576540555112246, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
@@ -939,6 +950,34 @@ PrefabInstance:
     - target: {fileID: 615389161320995732, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1683509754}
+    - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: DisplayUpgrades
+      objectReference: {fileID: 0}
+    - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UpgradePrefab, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1933709948154282085, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: baseProfit
@@ -1031,6 +1070,10 @@ PrefabInstance:
     - target: {fileID: 6227285583134176676, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: m_Name
       value: businessPrefabGameObjectB5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6552194743212087922, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7133015467849159121, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1357,6 +1400,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7681470188512744368, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
   m_PrefabInstance: {fileID: 1566577288}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &117320902 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
+  m_PrefabInstance: {fileID: 1566577288}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 117320900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d326e0abe5f22164b87b80a9122462b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &119784704
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1807,6 +1861,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7681470188512744368, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
   m_PrefabInstance: {fileID: 1245542324}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &131466683 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
+  m_PrefabInstance: {fileID: 1245542324}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 131466681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d326e0abe5f22164b87b80a9122462b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &136508800
 GameObject:
   m_ObjectHideFlags: 0
@@ -2143,6 +2208,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7681470188512744368, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
   m_PrefabInstance: {fileID: 41628152}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &166840409 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
+  m_PrefabInstance: {fileID: 41628152}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166840407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d326e0abe5f22164b87b80a9122462b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &191464526
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2798,6 +2874,34 @@ PrefabInstance:
     - target: {fileID: 615389161320995732, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 869084619}
+    - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: DisplayUpgrades
+      objectReference: {fileID: 0}
+    - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UpgradePrefab, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1933709948154282085, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: baseProfit
@@ -3883,6 +3987,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7681470188512744368, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
   m_PrefabInstance: {fileID: 1653195734}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &549126736 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
+  m_PrefabInstance: {fileID: 1653195734}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 549126734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d326e0abe5f22164b87b80a9122462b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &550317930
 GameObject:
   m_ObjectHideFlags: 0
@@ -4303,6 +4418,34 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 700fdad67450d144ea0d6941f347debe, type: 3}
+    - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 166840409}
+    - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: DisplayUpgrades
+      objectReference: {fileID: 0}
+    - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UpgradePrefab, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1933709948154282085, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: baseProfit
       value: 7464000
@@ -4983,6 +5126,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7681470188512744368, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
   m_PrefabInstance: {fileID: 114231128}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &869084619 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
+  m_PrefabInstance: {fileID: 114231128}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 869084617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d326e0abe5f22164b87b80a9122462b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &877125224
 GameObject:
   m_ObjectHideFlags: 0
@@ -5755,6 +5909,34 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: e3e553ce65d9f8c4bbec9b08f02d26ef, type: 3}
+    - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1758893543}
+    - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: DisplayUpgrades
+      objectReference: {fileID: 0}
+    - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UpgradePrefab, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1933709948154282085, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: baseProfit
       value: 89579000
@@ -5959,6 +6141,34 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: e22b43d2049c49e4a92d35a777769406, type: 3}
+    - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 117320902}
+    - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: DisplayUpgrades
+      objectReference: {fileID: 0}
+    - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UpgradePrefab, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1933709948154282085, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: baseProfit
       value: 540
@@ -8756,7 +8966,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: costUp1
-      value: 5
+      value: 250000
       objectReference: {fileID: 0}
     - target: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: costUp2
@@ -9038,6 +9248,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7681470188512744368, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
   m_PrefabInstance: {fileID: 569751902}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1683509754 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
+  m_PrefabInstance: {fileID: 569751902}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683509752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d326e0abe5f22164b87b80a9122462b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1701101366 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3957706299193202490, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
@@ -9269,6 +9490,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7681470188512744368, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
   m_PrefabInstance: {fileID: 157671199}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1758893543 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3897149811039171671, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
+  m_PrefabInstance: {fileID: 157671199}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1758893541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d326e0abe5f22164b87b80a9122462b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1774269469
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9288,6 +9520,34 @@ PrefabInstance:
     - target: {fileID: 696524514557433056, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 549126736}
+    - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: DisplayUpgrades
+      objectReference: {fileID: 0}
+    - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UpgradePrefab, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1933709948154282085, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: baseProfit
@@ -9618,6 +9878,34 @@ PrefabInstance:
     - target: {fileID: 615389161320995732, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 131466683}
+    - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: DisplayUpgrades
+      objectReference: {fileID: 0}
+    - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UpgradePrefab, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1933709948154282085, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: baseProfit
@@ -11306,6 +11594,34 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 3ccb1a68f8d71104ebaf371c4a4131fa, type: 3}
+    - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 91030967}
+    - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: DisplayUpgrades
+      objectReference: {fileID: 0}
+    - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UpgradePrefab, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1933709948154282085, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: baseProfit
       value: 60

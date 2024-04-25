@@ -944,6 +944,7 @@ MonoBehaviour:
   buttonGameObject: {fileID: 1708155468689275061}
   unlockedCanvas: {fileID: 0}
   updateLabel: {fileID: 4185383278551330462}
+  correspondingBusinessImage: {fileID: 3098269244345898041}
   businessMultiplierLabel: {fileID: 3526532918287072942}
   businessDescriptonLabel: {fileID: 4342601622439867950}
   description1: 

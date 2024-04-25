@@ -4,14 +4,17 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System;
+using System.Security.Cryptography.X509Certificates;
 
 public class UpgradePrefab : MonoBehaviour
 {
     [SerializeField] GameObject varibleObject;
     [SerializeField] TextMeshProUGUI ButtonText;
     [SerializeField] Button buttonGameObject;
-    [SerializeField] GameObject unlockedCanvas;
+    [SerializeField] GameObject unlockedCanvas;        //this comes from upgradePrefab
+    private upgradeButtonScript upgradeButtonScript;  //need this to get object of upgradeButton from businessPrefab and update its moneyGivenText 
     [SerializeField] GameObject updateLabel;
+    [SerializeField] Image correspondingBusinessImage;
     [SerializeField] GameObject businessMultiplierLabel;
     [SerializeField] GameObject businessDescriptonLabel;
     [SerializeField] String description1;
@@ -27,16 +30,44 @@ public class UpgradePrefab : MonoBehaviour
     businessVariables businessVariable;
     totalMoneyScript totalMoneyObject;
     public int upgradeTime = 1;
+    public bool firstTime = true;
 
     private void Awake()
     {
         businessVariable = varibleObject.GetComponent<businessVariables>();
         totalMoneyObject = GameObject.Find("totalMoney").GetComponent<totalMoneyScript>();
+        upgradeButtonScript = unlockedCanvas.transform.Find("Image/upgradeButton").GetComponent<upgradeButtonScript>();
+
+
+        //need this since the object this script is in (upgradePrefab) is not instantiated until the button to show the upgrades is clicked
+        if (unlockedCanvas.activeSelf)
+        {
+            DisplayUpgrades();
+        }
+        else
+        {
+            DisplayClassifiedInfo();
+        }
+    }
+
+    private void DisplayClassifiedInfo()
+    {
+        ButtonText.text = "Upgrade Cost: Classified";
+        updateLabel.GetComponent<TextMeshProUGUI>().text = "Classified Upgrades";
+        businessMultiplierLabel.GetComponent<TextMeshProUGUI>().text = "Classified Business Profits";
+        businessDescriptonLabel.GetComponent<TextMeshProUGUI>().text = "Unlocked more businesses to view their upgrades";
+        correspondingBusinessImage.color = Color.black;
+    }
+    //when corresponding business is unlocked, it calls this function to display information (default awakes as classified)
+    public void DisplayUpgrades()
+    {
         ButtonText.text = "Upgrade Cost: " + costUp1;
         updateLabel.GetComponent<TextMeshProUGUI>().text = updateName1;
-        businessMultiplierLabel.GetComponent<TextMeshProUGUI>().text =  businessVariable.businessName + " Profit x2";
+        businessMultiplierLabel.GetComponent<TextMeshProUGUI>().text = businessVariable.businessName + " Profit x2";
         businessDescriptonLabel.GetComponent<TextMeshProUGUI>().text = description1;
+        correspondingBusinessImage.color = Color.white;
     }
+
 
     public void updateMultiplier()
     {
@@ -56,6 +87,7 @@ public class UpgradePrefab : MonoBehaviour
                 updateLabel.GetComponent<TextMeshProUGUI>().text = updateName2;
                 businessMultiplierLabel.GetComponent<TextMeshProUGUI>().text = businessVariable.businessName + " Profit x3";
                 businessDescriptonLabel.GetComponent<TextMeshProUGUI>().text = description2;
+                upgradeButtonScript.updateMoneyGivenText();
                 break;
             case 2:
                 totalMoneyObject.totalMoney -= costUp2;
@@ -64,6 +96,7 @@ public class UpgradePrefab : MonoBehaviour
                 updateLabel.GetComponent<TextMeshProUGUI>().text = updateName3;
                 businessMultiplierLabel.GetComponent<TextMeshProUGUI>().text = businessVariable.businessName + " Profit x5";
                 businessDescriptonLabel.GetComponent<TextMeshProUGUI>().text = description3;
+                upgradeButtonScript.updateMoneyGivenText();
                 break;
             case 3:
                 totalMoneyObject.totalMoney -= costUp3;
@@ -72,6 +105,7 @@ public class UpgradePrefab : MonoBehaviour
                 updateLabel.GetComponent<TextMeshProUGUI>().text = "Fully Upgraded";
                 businessMultiplierLabel.GetComponent<TextMeshProUGUI>().text = "Profit Multiplier: is MAXED at x30";
                 businessDescriptonLabel.GetComponent<TextMeshProUGUI>().text = "This business has been fully upgraded";
+                upgradeButtonScript.updateMoneyGivenText();
                 break;
         }
 
@@ -81,7 +115,7 @@ public class UpgradePrefab : MonoBehaviour
     void Update()
     {
         
-        if (unlockedCanvas.activeSelf)
+        if (unlockedCanvas.activeSelf)      //if corresponding business is active
         {
             switch (upgradeTime)
             {
@@ -98,6 +132,7 @@ public class UpgradePrefab : MonoBehaviour
         }
         else {             
             buttonGameObject.interactable = false;
+
         }
     }
 
