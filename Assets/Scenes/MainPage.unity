@@ -293,7 +293,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4727011165273715936, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4727011165273715936, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_AnchorMin.x
@@ -301,7 +301,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4727011165273715936, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4727011165273715936, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_SizeDelta.x
@@ -357,7 +357,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4727011165273715936, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -1200
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4727011165273715936, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -432,7 +432,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: m_AnchorMin.x
@@ -440,7 +440,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: m_SizeDelta.x
@@ -488,11 +488,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 500
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -900
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -673,7 +673,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4727011165273715936, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4727011165273715936, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_AnchorMin.x
@@ -681,7 +681,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4727011165273715936, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4727011165273715936, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_SizeDelta.x
@@ -689,7 +689,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4727011165273715936, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 150
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4727011165273715936, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_LocalScale.x
@@ -737,7 +737,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4727011165273715936, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -175
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4727011165273715936, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -951,6 +951,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 630077509423899164, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ee9b694137e2a1d4d8610f44dea112c2, type: 3}
     - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -1066,6 +1070,43 @@ PrefabInstance:
     - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: sideToOpen
       value: left
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: dialogue.name
+      value: Broadcast
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: Welcome to Solar Dynamics Systems, where we harness the power of the
+        cosmos to fuel our journey through space.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: Our spacecraft, equipped with twin five-panel, cross-shaped solar arrays,
+        epitomizes the pinnacle of solar propulsion technology. These arrays, spanning
+        a vast 800 square feet (75 square meters), are a testament to our commitment
+        to sustainability and efficiency in deep space exploration.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: As our spacecraft ventures beyond the reaches of Earth, these colossal
+        arrays pivot around a central axis, perpetually orienting themselves towards
+        the life-giving Sun. In the cold expanse of space, where Psyche resides three
+        times farther from the Sun than our humble Earth, these arrays are our lifeline,
+        providing the energy needed to power our mission.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: dialogue.sentences.Array.data[3]
+      value: At launch, these solar marvels produce a staggering 21 kilowatts, ensuring
+        our journey begins with boundless energy. However, as we journey towards
+        Psyche, where the Sun's influence wanes, their output dwindles to between
+        2.3 and 3.4 kilowatts. Yet, even in the depths of space, our arrays remain
+        steadfast, powering every aspect of our mission, from propulsion to scientific
+        exploration.
       objectReference: {fileID: 0}
     - target: {fileID: 6227285583134176676, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: m_Name
@@ -1254,7 +1295,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: m_AnchorMin.x
@@ -1262,7 +1303,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: m_SizeDelta.x
@@ -1310,11 +1351,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 500
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -480
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1501,7 +1542,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4727011165273715936, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4727011165273715936, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_AnchorMin.x
@@ -1509,7 +1550,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4727011165273715936, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4727011165273715936, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_SizeDelta.x
@@ -1565,7 +1606,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4727011165273715936, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -450
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4727011165273715936, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2027,7 +2068,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: m_AnchorMin.x
@@ -2035,7 +2076,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: m_SizeDelta.x
@@ -2083,11 +2124,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 500
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -1040
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2309,7 +2350,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4727011165273715936, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4727011165273715936, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_AnchorMin.x
@@ -2317,7 +2358,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4727011165273715936, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4727011165273715936, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_SizeDelta.x
@@ -2373,7 +2414,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4727011165273715936, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -1450
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4727011165273715936, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2596,7 +2637,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4727011165273715936, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4727011165273715936, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_AnchorMin.x
@@ -2604,7 +2645,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4727011165273715936, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4727011165273715936, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_SizeDelta.x
@@ -2660,7 +2701,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4727011165273715936, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -950
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4727011165273715936, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2755,8 +2796,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 260.30002}
-  m_SizeDelta: {x: 0, y: 2000}
+  m_AnchoredPosition: {x: 0, y: 260.29996}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &261080895
 MonoBehaviour:
@@ -2875,6 +2916,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 630077509423899164, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 96a055d7609843848b86d1470189587f, type: 3}
     - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -2987,6 +3032,41 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: dialogue.name
+      value: Broadcast
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: Salutations, interstellar entrepreneur! Welcome to Deep Space Optical
+        Communications Innovations, where we pioneer the future of space communication.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: Our latest endeavor? The Deep Space Optical Communications (DSOC) technology
+        demonstration, attached to the Psyche mission. Allow me to shed light on
+        its significance.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: DSOC marks a milestone in space communication, as we venture beyond
+        the confines of traditional radio waves to explore the potential of optical
+        or laser communications. With this cutting-edge technology, NASA aims to
+        test communication capabilities over distances far surpassing those encountered
+        during lunar missions.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: dialogue.sentences.Array.data[3]
+      value: "But DSOC isn't just about pushing the boundaries of communication\u2014it's
+        about laying the groundwork for humanity's next great leap: the journey to
+        Mars. By testing key technologies during the period between November 2023
+        and October 2025, DSOC paves the way for future broadband communications
+        that will support our astronauts on their voyage to the Red Planet."
+      objectReference: {fileID: 0}
     - target: {fileID: 5254843781964806934, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: m_SortingOrder
       value: 5
@@ -3061,8 +3141,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 160080611}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.7584541}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -3331,18 +3411,6 @@ MonoBehaviour:
       - m_Target: {fileID: 447596421}
         m_TargetAssemblyTypeName: upgradePanel, Assembly-CSharp
         m_MethodName: openPanel
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1332392197}
-        m_TargetAssemblyTypeName: updateController, Assembly-CSharp
-        m_MethodName: OnPlayerAcknowledged
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3910,13 +3978,14 @@ GameObject:
   - component: {fileID: 546705732}
   - component: {fileID: 546705734}
   - component: {fileID: 546705733}
+  - component: {fileID: 546705735}
   m_Layer: 5
   m_Name: managerPanelImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &546705732
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3934,10 +4003,10 @@ RectTransform:
   - {fileID: 1722986174}
   m_Father: {fileID: 125054858}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 6, y: 8}
-  m_SizeDelta: {x: -394.1914, y: -367.99963}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 1974, y: -1139}
+  m_SizeDelta: {x: 1525.8086, y: 712.00037}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &546705733
 MonoBehaviour:
@@ -3977,6 +4046,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 546705731}
   m_CullTransparentMesh: 1
+--- !u!114 &546705735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546705731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b06c0f1bf22a3947a0d1a8dabd753b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &546793483 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
@@ -4081,7 +4162,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1928040839}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.2603
+  m_Size: 0.24213703
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -4146,7 +4227,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: m_AnchorMin.x
@@ -4154,7 +4235,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: m_SizeDelta.x
@@ -4202,11 +4283,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 500
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -620
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4542,6 +4623,36 @@ PrefabInstance:
       propertyPath: sideToOpen
       value: left
       objectReference: {fileID: 0}
+    - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: Welcome to SpectraVision Insights, where we unlock the hidden secrets
+        of the cosmos with the power of multispectral imaging.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: Our mission is to illuminate the darkest recesses of the Psyche asteroid,
+        revealing its intricate features and unraveling its enigmatic history. At
+        the heart of our endeavor lies Psyche's Multispectral Imagers, a pair of
+        identical cameras designed for unparalleled sensitivity and precision.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: Equipped with a range of filters, these advanced cameras transcend human
+        perception, capturing images across both visible and near-infrared wavelengths.
+        With this comprehensive spectral coverage, we delve deep into Psyche's surface,
+        deciphering its geochemical composition and unveiling its geological wonders.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: dialogue.sentences.Array.data[3]
+      value: From craters to valleys, cliffs to plains, our Multispectral Imagers
+        paint a vivid picture of Psyche's terrain, enabling the creation of detailed
+        3D topographic maps. Each image holds a story, each feature a clue, guiding
+        us on a journey through the asteroid's ancient past.
+      objectReference: {fileID: 0}
     - target: {fileID: 5122155590797219618, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: m_PresetInfoIsWorld
       value: 0
@@ -4553,6 +4664,10 @@ PrefabInstance:
     - target: {fileID: 6227285583134176676, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: m_Name
       value: businessPrefabGameObjectB7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6552194743212087922, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7133015467849159121, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -5077,7 +5192,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 337647197}
   m_HandleRect: {fileID: 337647196}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 1.0000001
   m_Size: 0.24154592
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -5828,9 +5943,9 @@ RectTransform:
   m_Father: {fileID: 708770611}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -17, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1033955165
 MonoBehaviour:
@@ -6024,6 +6139,50 @@ PrefabInstance:
     - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: sideToOpen
       value: left
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: dialogue.name
+      value: Broadcast
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: Welcome to GNS Probe, where we uncover the elemental secrets of the
+        cosmos with the power of gamma-ray and neutron spectroscopy.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: At the heart of our mission lies the Gamma-ray and Neutron Spectrometer,
+        a marvel of scientific instrumentation designed to probe the elemental composition
+        of the Psyche asteroid. With this advanced tool, we delve deep into Psyche's
+        surface, unraveling its elemental fingerprint and piecing together the asteroid's
+        ancient history.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: Unlike traditional methods that require landing, touching, or digging
+        into the surface, our spectrometer operates from a safe distance above Psyche,
+        eliminating the need for physical contact. Orbiting Psyche at close proximity
+        during Orbit D, our instrument embarks on a 100-day journey to collect crucial
+        data for mapping the asteroid's elemental composition.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: dialogue.sentences.Array.data[3]
+      value: How does it work, you ask? It's simple yet profound. Galactic cosmic
+        rays, in the form of fast protons, bombard the asteroid's surface, triggering
+        the release of gamma rays and neutrons. These emissions, akin to a cosmic
+        fingerprint, reveal the presence of elements such as iron, nickel, or silicon,
+        painting a vivid picture of Psyche's composition.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: dialogue.sentences.Array.data[4]
+      value: "Thank you for playing our game and embarking on this cosmic journey
+        with us. While we've shared some insights into Psyche, there's still so much
+        more to discover. Feel free to delve deeper into the wonders of this celestial
+        body by exploring further information online. Safe travels through the cosmos!\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 5122155590797219618, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: m_PresetInfoIsWorld
@@ -6253,6 +6412,47 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: dialogue.name
+      value: Broadcast
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: Welcome, esteemed galactic entrepreneur, to Solar Electric Propulsion
+        Solutions. Here at SEPS, we specialize in harnessing the power of the cosmos
+        to propel spacecraft into uncharted frontiers.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: Our flagship technology? The revolutionary solar electric propulsion
+        system, as employed by the Psyche spacecraft. Allow me to illuminate the
+        intricacies for you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: Utilizing vast solar arrays, our system generates electric and magnetic
+        fields, which in turn accelerate and expel charged atoms, or ions, from a
+        propellant known as xenon. Yes, the same xenon found in your car headlights
+        and plasma TVs, now powering our voyage through the stars.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: dialogue.sentences.Array.data[3]
+      value: "Picture this: as the ions are propelled at incredible speeds, they
+        emit a mesmerizing blue glow\u2014a sight straight out of science fiction\u2014as
+        our spacecraft charts its course through the cosmos."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: dialogue.sentences.Array.data[4]
+      value: But the true marvel lies in the subtlety of our craft's acceleration.
+        Each Hall-effect thruster, while exerting force akin to a mere AA battery
+        against your palm, contributes to a continuous, frictionless acceleration
+        in the vacuum of space. It's a testament to the ingenuity of our engineers
+        and the boundless potential of solar electric propulsion.
+      objectReference: {fileID: 0}
     - target: {fileID: 6227285583134176676, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: m_Name
       value: businessPrefabGameObjectB3
@@ -6440,7 +6640,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4727011165273715936, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4727011165273715936, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_AnchorMin.x
@@ -6448,7 +6648,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4727011165273715936, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4727011165273715936, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_SizeDelta.x
@@ -6504,7 +6704,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4727011165273715936, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -1950
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4727011165273715936, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6644,7 +6844,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: m_AnchorMin.x
@@ -6652,7 +6852,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: m_SizeDelta.x
@@ -6700,11 +6900,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 500
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -200
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -7289,7 +7489,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: m_AnchorMin.x
@@ -7297,7 +7497,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: m_SizeDelta.x
@@ -7345,11 +7545,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 500
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -760
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -7450,13 +7650,15 @@ GameObject:
   - component: {fileID: 1266986755}
   - component: {fileID: 1266986757}
   - component: {fileID: 1266986756}
+  - component: {fileID: 1266986758}
+  - component: {fileID: 1266986759}
   m_Layer: 5
   m_Name: upgradePanelImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1266986755
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7474,10 +7676,10 @@ RectTransform:
   - {fileID: 877125225}
   m_Father: {fileID: 1646313312}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 6, y: 3}
-  m_SizeDelta: {x: -394.1915, y: -367.9997}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 6, y: -1139}
+  m_SizeDelta: {x: 1525.8085, y: 712.0003}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1266986756
 MonoBehaviour:
@@ -7517,6 +7719,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1266986754}
   m_CullTransparentMesh: 1
+--- !u!114 &1266986758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266986754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b06c0f1bf22a3947a0d1a8dabd753b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1266986759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266986754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b06c0f1bf22a3947a0d1a8dabd753b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1296401124 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1560055141389288213, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
@@ -8158,7 +8384,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: m_AnchorMin.x
@@ -8166,7 +8392,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: m_SizeDelta.x
@@ -8214,11 +8440,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 500
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -340
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -8858,7 +9084,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: m_AnchorMin.x
@@ -8866,7 +9092,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: m_SizeDelta.x
@@ -8914,11 +9140,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 500
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -60
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2165456490998221325, guid: b74af2daef6ecef4c9505f5a72d13bce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -9126,7 +9352,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4727011165273715936, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4727011165273715936, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_AnchorMin.x
@@ -9134,7 +9360,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4727011165273715936, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4727011165273715936, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_SizeDelta.x
@@ -9190,7 +9416,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4727011165273715936, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -1700
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4727011165273715936, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -9879,6 +10105,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 630077509423899164, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c843dda08b454ab4582577f5cc37db1e, type: 3}
     - target: {fileID: 921867341980708537, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -9994,6 +10224,42 @@ PrefabInstance:
     - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: sideToOpen
       value: left
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: dialogue.name
+      value: Broadcast
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: Welcome to Magnetometry Insights, where we delve into the hidden magnetic
+        mysteries of the cosmos.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: 'Our mission is clear: to uncover evidence of an ancient magnetic field
+        within the enigmatic Psyche asteroid. As pioneers in magnetometry technology,
+        we understand that a residual magnetic field serves as a profound indication
+        of Psyche''s primordial origins, potentially stemming from the core of a
+        planetary body.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: At the heart of our endeavor lies the Magnetometer, a marvel of scientific
+        instrumentation that remains operational throughout the entirety of our mission.
+        From launch to arrival at the Psyche asteroid, the Magnetometer tirelessly
+        calibrates any magnetic noise encountered in the vast expanse of space.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: dialogue.sentences.Array.data[3]
+      value: Why the continuous operation, you ask? It's simple. By maintaining the
+        Magnetometer's functionality throughout the journey, we ensure pristine measurements
+        of Psyche's magnetic field upon arrival. In a realm where distinguishing
+        between the asteroid's magnetic signatures and those of surrounding solar
+        wind proves challenging, our diligent approach guarantees accuracy and reliability.
       objectReference: {fileID: 0}
     - target: {fileID: 6227285583134176676, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: m_Name
@@ -10334,7 +10600,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4727011165273715936, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4727011165273715936, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_AnchorMin.x
@@ -10342,7 +10608,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4727011165273715936, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4727011165273715936, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_SizeDelta.x
@@ -10398,7 +10664,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4727011165273715936, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -700
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4727011165273715936, guid: acfe636a1b37c4b4ca0d922611c0c6ef, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -10933,8 +11199,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 625163131}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.73969996}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -11712,15 +11978,33 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: dialogue.name
-      value: robot2
+      value: Broadcast
       objectReference: {fileID: 0}
     - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: dialogue.sentences.Array.size
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: bozosoo
+      value: Welcome, esteemed galactic entrepreneur, to the Cosmic Origins Research
+        Institute. Here at CORI, we delve into the depths of cosmic mysteries, seeking
+        answers to questions that have perplexed humanity for eons.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: "Our current focus? The enigmatic asteroid Psyche. Why, you ask? Well,
+        allow me to enlighten you. Psyche holds the potential to unlock secrets about
+        the very origins of our solar system. It could be a remnant of a primordial
+        era, a fragment of a planetesimal\u2014a cosmic building block from which
+        rocky planets like Mercury, Venus, Mars, and our beloved Earth were forged."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485048968847794191, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: "You see, while we may dream of excavating Earth's or other planets'
+        cores, such feats remain beyond our grasp. But Psyche offers a unique opportunity.
+        By studying its metal-rich interior, we can unravel the history of cosmic
+        collisions and the accumulation of matter that shaped worlds akin to our
+        own.\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 5122155590797219618, guid: 2c2ed76f75ce0b342b8b6188d1598948, type: 3}
       propertyPath: m_PresetInfoIsWorld
@@ -11970,8 +12254,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.541, y: 0.5}
   m_AnchorMax: {x: 0.541, y: 0.5}
-  m_AnchoredPosition: {x: -540.9996, y: 250}
-  m_SizeDelta: {x: 1000, y: 1150}
+  m_AnchoredPosition: {x: -540.9996, y: 249.99994}
+  m_SizeDelta: {x: 1000, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &2077777626
 MonoBehaviour:

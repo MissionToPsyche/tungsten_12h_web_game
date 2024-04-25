@@ -249,8 +249,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Button
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: fffb50eefacd5af4b9d88841776c657b, type: 2}
-  m_sharedMaterial: {fileID: -8291940295877933776, guid: fffb50eefacd5af4b9d88841776c657b, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: fc6310ce9731b754abe82dfb746c0855, type: 2}
+  m_sharedMaterial: {fileID: 4323013543843793412, guid: fc6310ce9731b754abe82dfb746c0855, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -958,6 +958,7 @@ MonoBehaviour:
   costUp3: 100
   openManagerPanelAnimator: {fileID: 0}
   upgradeTime: 1
+  firstTime: 1
 --- !u!1 &8305725849161863946
 GameObject:
   m_ObjectHideFlags: 0

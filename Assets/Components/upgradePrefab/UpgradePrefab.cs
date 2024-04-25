@@ -39,17 +39,9 @@ public class UpgradePrefab : MonoBehaviour
         upgradeButtonScript = unlockedCanvas.transform.Find("Image/upgradeButton").GetComponent<upgradeButtonScript>();
 
 
-        //need this since the object this script is in (upgradePrefab) is not instantiated until the button to show the upgrades is clicked
-        if (unlockedCanvas.activeSelf)
-        {
-            DisplayUpgrades();
-        }
-        else
-        {
-            DisplayClassifiedInfo();
-        }
-    }
+        DisplayClassifiedInfo();
 
+    }
     private void DisplayClassifiedInfo()
     {
         ButtonText.text = "Upgrade Cost: Classified";
